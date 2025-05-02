@@ -1,0 +1,7490 @@
+[
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "koen",
+          "expression": "value",
+          "columnName": "koen",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "kvinde",
+                "l": "kvinde"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "alder",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column alder using expression value.toNumber()"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "koen",
+          "expression": "value",
+          "columnName": "koen",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "kvinde",
+                "l": "kvinde"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "range",
+          "name": "alder",
+          "expression": "value",
+          "columnName": "alder",
+          "from": 20,
+          "to": 30,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        },
+        {
+          "type": "list",
+          "name": "civilstand",
+          "expression": "value",
+          "columnName": "civilstand",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "ugift",
+                "l": "ugift"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "erhverv",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Wæwerske"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Væver"
+      }
+    ],
+    "description": "Mass edit cells in column erhverv"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "koen",
+          "expression": "value",
+          "columnName": "koen",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "kvinde",
+                "l": "kvinde"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "range",
+          "name": "alder",
+          "expression": "value",
+          "columnName": "alder",
+          "from": 20,
+          "to": 30,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        },
+        {
+          "type": "list",
+          "name": "civilstand",
+          "expression": "value",
+          "columnName": "civilstand",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "ugift",
+                "l": "ugift"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "erhverv",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "wæwer"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Væver"
+      }
+    ],
+    "description": "Mass edit cells in column erhverv"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "koen",
+          "expression": "value",
+          "columnName": "koen",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "kvinde",
+                "l": "kvinde"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "range",
+          "name": "alder",
+          "expression": "value",
+          "columnName": "alder",
+          "from": 20,
+          "to": 30,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        },
+        {
+          "type": "list",
+          "name": "civilstand",
+          "expression": "value",
+          "columnName": "civilstand",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "ugift",
+                "l": "ugift"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "erhverv",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "wanfør"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Invalid"
+      }
+    ],
+    "description": "Mass edit cells in column erhverv"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "koen",
+          "expression": "value",
+          "columnName": "koen",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "kvinde",
+                "l": "kvinde"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "range",
+          "name": "alder",
+          "expression": "value",
+          "columnName": "alder",
+          "from": 20,
+          "to": 30,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        },
+        {
+          "type": "list",
+          "name": "civilstand",
+          "expression": "value",
+          "columnName": "civilstand",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "ugift",
+                "l": "ugift"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "erhverv",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Væverske og Inderste"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Væver"
+      }
+    ],
+    "description": "Mass edit cells in column erhverv"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "koen",
+          "expression": "value",
+          "columnName": "koen",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "kvinde",
+                "l": "kvinde"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "range",
+          "name": "alder",
+          "expression": "value",
+          "columnName": "alder",
+          "from": 20,
+          "to": 30,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        },
+        {
+          "type": "list",
+          "name": "civilstand",
+          "expression": "value",
+          "columnName": "civilstand",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "ugift",
+                "l": "ugift"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "erhverv",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "væverske"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Væver"
+      }
+    ],
+    "description": "Mass edit cells in column erhverv"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "koen",
+          "expression": "value",
+          "columnName": "koen",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "kvinde",
+                "l": "kvinde"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "range",
+          "name": "alder",
+          "expression": "value",
+          "columnName": "alder",
+          "from": 20,
+          "to": 30,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        },
+        {
+          "type": "list",
+          "name": "civilstand",
+          "expression": "value",
+          "columnName": "civilstand",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "ugift",
+                "l": "ugift"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "erhverv",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Væverske"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Væver"
+      }
+    ],
+    "description": "Mass edit cells in column erhverv"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "koen",
+          "expression": "value",
+          "columnName": "koen",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "kvinde",
+                "l": "kvinde"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "range",
+          "name": "alder",
+          "expression": "value",
+          "columnName": "alder",
+          "from": 20,
+          "to": 30,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        },
+        {
+          "type": "list",
+          "name": "civilstand",
+          "expression": "value",
+          "columnName": "civilstand",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "ugift",
+                "l": "ugift"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "erhverv",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Væverpige"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Væver"
+      }
+    ],
+    "description": "Mass edit cells in column erhverv"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "koen",
+          "expression": "value",
+          "columnName": "koen",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "kvinde",
+                "l": "kvinde"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "range",
+          "name": "alder",
+          "expression": "value",
+          "columnName": "alder",
+          "from": 20,
+          "to": 30,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        },
+        {
+          "type": "list",
+          "name": "civilstand",
+          "expression": "value",
+          "columnName": "civilstand",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "ugift",
+                "l": "ugift"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "erhverv",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "væver og indsidder"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Væver"
+      }
+    ],
+    "description": "Mass edit cells in column erhverv"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "koen",
+          "expression": "value",
+          "columnName": "koen",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "kvinde",
+                "l": "kvinde"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "range",
+          "name": "alder",
+          "expression": "value",
+          "columnName": "alder",
+          "from": 20,
+          "to": 30,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        },
+        {
+          "type": "list",
+          "name": "civilstand",
+          "expression": "value",
+          "columnName": "civilstand",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "ugift",
+                "l": "ugift"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "erhverv",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Vanvittig og nyder af de Fattiges Penge"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Syg"
+      }
+    ],
+    "description": "Mass edit cells in column erhverv"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "koen",
+          "expression": "value",
+          "columnName": "koen",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "kvinde",
+                "l": "kvinde"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "range",
+          "name": "alder",
+          "expression": "value",
+          "columnName": "alder",
+          "from": 20,
+          "to": 30,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        },
+        {
+          "type": "list",
+          "name": "civilstand",
+          "expression": "value",
+          "columnName": "civilstand",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "ugift",
+                "l": "ugift"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "erhverv",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "vanvittig"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Syg"
+      }
+    ],
+    "description": "Mass edit cells in column erhverv"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "koen",
+          "expression": "value",
+          "columnName": "koen",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "kvinde",
+                "l": "kvinde"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "range",
+          "name": "alder",
+          "expression": "value",
+          "columnName": "alder",
+          "from": 20,
+          "to": 30,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        },
+        {
+          "type": "list",
+          "name": "civilstand",
+          "expression": "value",
+          "columnName": "civilstand",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "ugift",
+                "l": "ugift"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "erhverv",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "vanfør og tåbelig"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Invalid"
+      }
+    ],
+    "description": "Mass edit cells in column erhverv"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "koen",
+          "expression": "value",
+          "columnName": "koen",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "kvinde",
+                "l": "kvinde"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "range",
+          "name": "alder",
+          "expression": "value",
+          "columnName": "alder",
+          "from": 20,
+          "to": 30,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        },
+        {
+          "type": "list",
+          "name": "civilstand",
+          "expression": "value",
+          "columnName": "civilstand",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "ugift",
+                "l": "ugift"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "erhverv",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "vanfør"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Invalid"
+      }
+    ],
+    "description": "Mass edit cells in column erhverv"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "koen",
+          "expression": "value",
+          "columnName": "koen",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "kvinde",
+                "l": "kvinde"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "range",
+          "name": "alder",
+          "expression": "value",
+          "columnName": "alder",
+          "from": 20,
+          "to": 30,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        },
+        {
+          "type": "list",
+          "name": "civilstand",
+          "expression": "value",
+          "columnName": "civilstand",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "ugift",
+                "l": "ugift"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "erhverv",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Vanfør"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Invalid"
+      }
+    ],
+    "description": "Mass edit cells in column erhverv"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "koen",
+          "expression": "value",
+          "columnName": "koen",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "kvinde",
+                "l": "kvinde"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "range",
+          "name": "alder",
+          "expression": "value",
+          "columnName": "alder",
+          "from": 20,
+          "to": 30,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        },
+        {
+          "type": "list",
+          "name": "civilstand",
+          "expression": "value",
+          "columnName": "civilstand",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "ugift",
+                "l": "ugift"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "erhverv",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Vandfør og nyder Almisse"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Invalid"
+      }
+    ],
+    "description": "Mass edit cells in column erhverv"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "koen",
+          "expression": "value",
+          "columnName": "koen",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "kvinde",
+                "l": "kvinde"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "range",
+          "name": "alder",
+          "expression": "value",
+          "columnName": "alder",
+          "from": 20,
+          "to": 30,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        },
+        {
+          "type": "list",
+          "name": "civilstand",
+          "expression": "value",
+          "columnName": "civilstand",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "ugift",
+                "l": "ugift"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "erhverv",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "varter Forældrene"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Tjener"
+      }
+    ],
+    "description": "Mass edit cells in column erhverv"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "koen",
+          "expression": "value",
+          "columnName": "koen",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "kvinde",
+                "l": "kvinde"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "range",
+          "name": "alder",
+          "expression": "value",
+          "columnName": "alder",
+          "from": 20,
+          "to": 30,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        },
+        {
+          "type": "list",
+          "name": "civilstand",
+          "expression": "value",
+          "columnName": "civilstand",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "ugift",
+                "l": "ugift"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "erhverv",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Vanvittig og nyder Almisse af Sognet"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Syg"
+      }
+    ],
+    "description": "Mass edit cells in column erhverv"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "koen",
+          "expression": "value",
+          "columnName": "koen",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "kvinde",
+                "l": "kvinde"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "range",
+          "name": "alder",
+          "expression": "value",
+          "columnName": "alder",
+          "from": 20,
+          "to": 30,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        },
+        {
+          "type": "list",
+          "name": "civilstand",
+          "expression": "value",
+          "columnName": "civilstand",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "ugift",
+                "l": "ugift"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "erhverv",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "tjenstledig"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Tjener"
+      }
+    ],
+    "description": "Mass edit cells in column erhverv"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "koen",
+          "expression": "value",
+          "columnName": "koen",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "kvinde",
+                "l": "kvinde"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "range",
+          "name": "alder",
+          "expression": "value",
+          "columnName": "alder",
+          "from": 20,
+          "to": 30,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        },
+        {
+          "type": "list",
+          "name": "civilstand",
+          "expression": "value",
+          "columnName": "civilstand",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "ugift",
+                "l": "ugift"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "erhverv",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "tjenestepige"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Tjenestepige"
+      }
+    ],
+    "description": "Mass edit cells in column erhverv"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "koen",
+          "expression": "value",
+          "columnName": "koen",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "kvinde",
+                "l": "kvinde"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "range",
+          "name": "alder",
+          "expression": "value",
+          "columnName": "alder",
+          "from": 20,
+          "to": 30,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        },
+        {
+          "type": "list",
+          "name": "civilstand",
+          "expression": "value",
+          "columnName": "civilstand",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "ugift",
+                "l": "ugift"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "erhverv",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "tjener som pigen"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Tjenestepige"
+      }
+    ],
+    "description": "Mass edit cells in column erhverv"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "koen",
+          "expression": "value",
+          "columnName": "koen",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "kvinde",
+                "l": "kvinde"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "range",
+          "name": "alder",
+          "expression": "value",
+          "columnName": "alder",
+          "from": 20,
+          "to": 30,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        },
+        {
+          "type": "list",
+          "name": "civilstand",
+          "expression": "value",
+          "columnName": "civilstand",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "ugift",
+                "l": "ugift"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "erhverv",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "tjener som pige"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Tjenestepige"
+      }
+    ],
+    "description": "Mass edit cells in column erhverv"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "koen",
+          "expression": "value",
+          "columnName": "koen",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "kvinde",
+                "l": "kvinde"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "range",
+          "name": "alder",
+          "expression": "value",
+          "columnName": "alder",
+          "from": 20,
+          "to": 30,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        },
+        {
+          "type": "list",
+          "name": "civilstand",
+          "expression": "value",
+          "columnName": "civilstand",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "ugift",
+                "l": "ugift"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "erhverv",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "tjener moderen"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Tjenestepige"
+      }
+    ],
+    "description": "Mass edit cells in column erhverv"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "koen",
+          "expression": "value",
+          "columnName": "koen",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "kvinde",
+                "l": "kvinde"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "range",
+          "name": "alder",
+          "expression": "value",
+          "columnName": "alder",
+          "from": 20,
+          "to": 30,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        },
+        {
+          "type": "list",
+          "name": "civilstand",
+          "expression": "value",
+          "columnName": "civilstand",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "ugift",
+                "l": "ugift"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "erhverv",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "tjener husbonden"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Tjenstepige"
+      }
+    ],
+    "description": "Mass edit cells in column erhverv"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "koen",
+          "expression": "value",
+          "columnName": "koen",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "kvinde",
+                "l": "kvinde"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "range",
+          "name": "alder",
+          "expression": "value",
+          "columnName": "alder",
+          "from": 20,
+          "to": 30,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        },
+        {
+          "type": "list",
+          "name": "civilstand",
+          "expression": "value",
+          "columnName": "civilstand",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "ugift",
+                "l": "ugift"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "erhverv",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Tjenstepige"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Tjenestepige"
+      }
+    ],
+    "description": "Mass edit cells in column erhverv"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "koen",
+          "expression": "value",
+          "columnName": "koen",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "kvinde",
+                "l": "kvinde"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "range",
+          "name": "alder",
+          "expression": "value",
+          "columnName": "alder",
+          "from": 20,
+          "to": 30,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        },
+        {
+          "type": "list",
+          "name": "civilstand",
+          "expression": "value",
+          "columnName": "civilstand",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "ugift",
+                "l": "ugift"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "erhverv",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "tjener hos forældrene"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Tjenestepige"
+      }
+    ],
+    "description": "Mass edit cells in column erhverv"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "koen",
+          "expression": "value",
+          "columnName": "koen",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "kvinde",
+                "l": "kvinde"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "range",
+          "name": "alder",
+          "expression": "value",
+          "columnName": "alder",
+          "from": 20,
+          "to": 30,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        },
+        {
+          "type": "list",
+          "name": "civilstand",
+          "expression": "value",
+          "columnName": "civilstand",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "ugift",
+                "l": "ugift"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "erhverv",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Tjener Forældrene"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Tjenestepige"
+      }
+    ],
+    "description": "Mass edit cells in column erhverv"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "koen",
+          "expression": "value",
+          "columnName": "koen",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "kvinde",
+                "l": "kvinde"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "range",
+          "name": "alder",
+          "expression": "value",
+          "columnName": "alder",
+          "from": 20,
+          "to": 30,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        },
+        {
+          "type": "list",
+          "name": "civilstand",
+          "expression": "value",
+          "columnName": "civilstand",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "ugift",
+                "l": "ugift"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "erhverv",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "tjener Forældrene"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Tjenestepige"
+      }
+    ],
+    "description": "Mass edit cells in column erhverv"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "koen",
+          "expression": "value",
+          "columnName": "koen",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "kvinde",
+                "l": "kvinde"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "range",
+          "name": "alder",
+          "expression": "value",
+          "columnName": "alder",
+          "from": 20,
+          "to": 30,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        },
+        {
+          "type": "list",
+          "name": "civilstand",
+          "expression": "value",
+          "columnName": "civilstand",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "ugift",
+                "l": "ugift"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "erhverv",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "tjener faderen"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Tjenestepige"
+      }
+    ],
+    "description": "Mass edit cells in column erhverv"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "koen",
+          "expression": "value",
+          "columnName": "koen",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "kvinde",
+                "l": "kvinde"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "range",
+          "name": "alder",
+          "expression": "value",
+          "columnName": "alder",
+          "from": 20,
+          "to": 30,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        },
+        {
+          "type": "list",
+          "name": "civilstand",
+          "expression": "value",
+          "columnName": "civilstand",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "ugift",
+                "l": "ugift"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "erhverv",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "tjener andetsteds"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Tjenestepige"
+      }
+    ],
+    "description": "Mass edit cells in column erhverv"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "koen",
+          "expression": "value",
+          "columnName": "koen",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "kvinde",
+                "l": "kvinde"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "range",
+          "name": "alder",
+          "expression": "value",
+          "columnName": "alder",
+          "from": 20,
+          "to": 30,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        },
+        {
+          "type": "list",
+          "name": "civilstand",
+          "expression": "value",
+          "columnName": "civilstand",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "ugift",
+                "l": "ugift"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "erhverv",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "tjener alle hos moderen"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Tjenestepige"
+      }
+    ],
+    "description": "Mass edit cells in column erhverv"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "koen",
+          "expression": "value",
+          "columnName": "koen",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "kvinde",
+                "l": "kvinde"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "range",
+          "name": "alder",
+          "expression": "value",
+          "columnName": "alder",
+          "from": 20,
+          "to": 30,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        },
+        {
+          "type": "list",
+          "name": "civilstand",
+          "expression": "value",
+          "columnName": "civilstand",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "ugift",
+                "l": "ugift"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "erhverv",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Tjener"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Tjenestepige"
+      }
+    ],
+    "description": "Mass edit cells in column erhverv"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "koen",
+          "expression": "value",
+          "columnName": "koen",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "kvinde",
+                "l": "kvinde"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "range",
+          "name": "alder",
+          "expression": "value",
+          "columnName": "alder",
+          "from": 20,
+          "to": 30,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        },
+        {
+          "type": "list",
+          "name": "civilstand",
+          "expression": "value",
+          "columnName": "civilstand",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "ugift",
+                "l": "ugift"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "erhverv",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "tjenende hos forældrene"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Tjenestepige"
+      }
+    ],
+    "description": "Mass edit cells in column erhverv"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "koen",
+          "expression": "value",
+          "columnName": "koen",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "kvinde",
+                "l": "kvinde"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "range",
+          "name": "alder",
+          "expression": "value",
+          "columnName": "alder",
+          "from": 20,
+          "to": 30,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        },
+        {
+          "type": "list",
+          "name": "civilstand",
+          "expression": "value",
+          "columnName": "civilstand",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "ugift",
+                "l": "ugift"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "erhverv",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "tjene Forældrene"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Tjenestepige"
+      }
+    ],
+    "description": "Mass edit cells in column erhverv"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "koen",
+          "expression": "value",
+          "columnName": "koen",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "kvinde",
+                "l": "kvinde"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "range",
+          "name": "alder",
+          "expression": "value",
+          "columnName": "alder",
+          "from": 20,
+          "to": 30,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        },
+        {
+          "type": "list",
+          "name": "civilstand",
+          "expression": "value",
+          "columnName": "civilstand",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "ugift",
+                "l": "ugift"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "erhverv",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Tienestepige"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Tjenestepige"
+      }
+    ],
+    "description": "Mass edit cells in column erhverv"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "koen",
+          "expression": "value",
+          "columnName": "koen",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "kvinde",
+                "l": "kvinde"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "range",
+          "name": "alder",
+          "expression": "value",
+          "columnName": "alder",
+          "from": 20,
+          "to": 30,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        },
+        {
+          "type": "list",
+          "name": "civilstand",
+          "expression": "value",
+          "columnName": "civilstand",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "ugift",
+                "l": "ugift"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "erhverv",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "syr for folk"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Syerske"
+      }
+    ],
+    "description": "Mass edit cells in column erhverv"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "koen",
+          "expression": "value",
+          "columnName": "koen",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "kvinde",
+                "l": "kvinde"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "range",
+          "name": "alder",
+          "expression": "value",
+          "columnName": "alder",
+          "from": 20,
+          "to": 30,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        },
+        {
+          "type": "list",
+          "name": "civilstand",
+          "expression": "value",
+          "columnName": "civilstand",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "ugift",
+                "l": "ugift"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "erhverv",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "syerske"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Syerske"
+      }
+    ],
+    "description": "Mass edit cells in column erhverv"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "koen",
+          "expression": "value",
+          "columnName": "koen",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "kvinde",
+                "l": "kvinde"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "range",
+          "name": "alder",
+          "expression": "value",
+          "columnName": "alder",
+          "from": 20,
+          "to": 30,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        },
+        {
+          "type": "list",
+          "name": "civilstand",
+          "expression": "value",
+          "columnName": "civilstand",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "ugift",
+                "l": "ugift"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "erhverv",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "syer"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Syerske"
+      }
+    ],
+    "description": "Mass edit cells in column erhverv"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "koen",
+          "expression": "value",
+          "columnName": "koen",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "kvinde",
+                "l": "kvinde"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "range",
+          "name": "alder",
+          "expression": "value",
+          "columnName": "alder",
+          "from": 20,
+          "to": 30,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        },
+        {
+          "type": "list",
+          "name": "civilstand",
+          "expression": "value",
+          "columnName": "civilstand",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "ugift",
+                "l": "ugift"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "erhverv",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Syepige"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Syerske"
+      }
+    ],
+    "description": "Mass edit cells in column erhverv"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "koen",
+          "expression": "value",
+          "columnName": "koen",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "kvinde",
+                "l": "kvinde"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "range",
+          "name": "alder",
+          "expression": "value",
+          "columnName": "alder",
+          "from": 20,
+          "to": 30,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        },
+        {
+          "type": "list",
+          "name": "civilstand",
+          "expression": "value",
+          "columnName": "civilstand",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "ugift",
+                "l": "ugift"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "erhverv",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Sye Pige"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Syerske"
+      }
+    ],
+    "description": "Mass edit cells in column erhverv"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "koen",
+          "expression": "value",
+          "columnName": "koen",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "kvinde",
+                "l": "kvinde"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "range",
+          "name": "alder",
+          "expression": "value",
+          "columnName": "alder",
+          "from": 20,
+          "to": 30,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        },
+        {
+          "type": "list",
+          "name": "civilstand",
+          "expression": "value",
+          "columnName": "civilstand",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "ugift",
+                "l": "ugift"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "erhverv",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Svag"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Invalid"
+      }
+    ],
+    "description": "Mass edit cells in column erhverv"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "koen",
+          "expression": "value",
+          "columnName": "koen",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "kvinde",
+                "l": "kvinde"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "range",
+          "name": "alder",
+          "expression": "value",
+          "columnName": "alder",
+          "from": 20,
+          "to": 30,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        },
+        {
+          "type": "list",
+          "name": "civilstand",
+          "expression": "value",
+          "columnName": "civilstand",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "ugift",
+                "l": "ugift"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "erhverv",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Stuepige"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Husholderske"
+      }
+    ],
+    "description": "Mass edit cells in column erhverv"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "koen",
+          "expression": "value",
+          "columnName": "koen",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "kvinde",
+                "l": "kvinde"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "range",
+          "name": "alder",
+          "expression": "value",
+          "columnName": "alder",
+          "from": 20,
+          "to": 30,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        },
+        {
+          "type": "list",
+          "name": "civilstand",
+          "expression": "value",
+          "columnName": "civilstand",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "ugift",
+                "l": "ugift"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "erhverv",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "stuepige"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Husholderske"
+      }
+    ],
+    "description": "Mass edit cells in column erhverv"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "koen",
+          "expression": "value",
+          "columnName": "koen",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "kvinde",
+                "l": "kvinde"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "range",
+          "name": "alder",
+          "expression": "value",
+          "columnName": "alder",
+          "from": 20,
+          "to": 30,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        },
+        {
+          "type": "list",
+          "name": "civilstand",
+          "expression": "value",
+          "columnName": "civilstand",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "ugift",
+                "l": "ugift"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "erhverv",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Spinderske"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Spinder"
+      }
+    ],
+    "description": "Mass edit cells in column erhverv"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "koen",
+          "expression": "value",
+          "columnName": "koen",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "kvinde",
+                "l": "kvinde"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "range",
+          "name": "alder",
+          "expression": "value",
+          "columnName": "alder",
+          "from": 20,
+          "to": 30,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        },
+        {
+          "type": "list",
+          "name": "civilstand",
+          "expression": "value",
+          "columnName": "civilstand",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "ugift",
+                "l": "ugift"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "erhverv",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "spinderske"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Spinder"
+      }
+    ],
+    "description": "Mass edit cells in column erhverv"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "koen",
+          "expression": "value",
+          "columnName": "koen",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "kvinde",
+                "l": "kvinde"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "range",
+          "name": "alder",
+          "expression": "value",
+          "columnName": "alder",
+          "from": 20,
+          "to": 30,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        },
+        {
+          "type": "list",
+          "name": "civilstand",
+          "expression": "value",
+          "columnName": "civilstand",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "ugift",
+                "l": "ugift"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "erhverv",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Spinder"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Spinder"
+      }
+    ],
+    "description": "Mass edit cells in column erhverv"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "koen",
+          "expression": "value",
+          "columnName": "koen",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "kvinde",
+                "l": "kvinde"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "range",
+          "name": "alder",
+          "expression": "value",
+          "columnName": "alder",
+          "from": 20,
+          "to": 30,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        },
+        {
+          "type": "list",
+          "name": "civilstand",
+          "expression": "value",
+          "columnName": "civilstand",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "ugift",
+                "l": "ugift"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "erhverv",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Spinder"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Spinder"
+      }
+    ],
+    "description": "Mass edit cells in column erhverv"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "koen",
+          "expression": "value",
+          "columnName": "koen",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "kvinde",
+                "l": "kvinde"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "range",
+          "name": "alder",
+          "expression": "value",
+          "columnName": "alder",
+          "from": 20,
+          "to": 30,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        },
+        {
+          "type": "list",
+          "name": "civilstand",
+          "expression": "value",
+          "columnName": "civilstand",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "ugift",
+                "l": "ugift"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "erhverv",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "spinder"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Spinder"
+      }
+    ],
+    "description": "Mass edit cells in column erhverv"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "koen",
+          "expression": "value",
+          "columnName": "koen",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "kvinde",
+                "l": "kvinde"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "range",
+          "name": "alder",
+          "expression": "value",
+          "columnName": "alder",
+          "from": 20,
+          "to": 30,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        },
+        {
+          "type": "list",
+          "name": "civilstand",
+          "expression": "value",
+          "columnName": "civilstand",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "ugift",
+                "l": "ugift"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "erhverv",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Skrøbelig og nyder Almisse af Sognet"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Invalid"
+      }
+    ],
+    "description": "Mass edit cells in column erhverv"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "koen",
+          "expression": "value",
+          "columnName": "koen",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "kvinde",
+                "l": "kvinde"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "range",
+          "name": "alder",
+          "expression": "value",
+          "columnName": "alder",
+          "from": 20,
+          "to": 30,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        },
+        {
+          "type": "list",
+          "name": "civilstand",
+          "expression": "value",
+          "columnName": "civilstand",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "ugift",
+                "l": "ugift"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "erhverv",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Skræderske"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Skrædder"
+      }
+    ],
+    "description": "Mass edit cells in column erhverv"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "koen",
+          "expression": "value",
+          "columnName": "koen",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "kvinde",
+                "l": "kvinde"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "range",
+          "name": "alder",
+          "expression": "value",
+          "columnName": "alder",
+          "from": 20,
+          "to": 30,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        },
+        {
+          "type": "list",
+          "name": "civilstand",
+          "expression": "value",
+          "columnName": "civilstand",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "ugift",
+                "l": "ugift"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "erhverv",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Skræderpige"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Skrædder"
+      }
+    ],
+    "description": "Mass edit cells in column erhverv"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "koen",
+          "expression": "value",
+          "columnName": "koen",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "kvinde",
+                "l": "kvinde"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "range",
+          "name": "alder",
+          "expression": "value",
+          "columnName": "alder",
+          "from": 20,
+          "to": 30,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        },
+        {
+          "type": "list",
+          "name": "civilstand",
+          "expression": "value",
+          "columnName": "civilstand",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "ugift",
+                "l": "ugift"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "erhverv",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "skrædderpige"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Skrædder"
+      }
+    ],
+    "description": "Mass edit cells in column erhverv"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "koen",
+          "expression": "value",
+          "columnName": "koen",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "kvinde",
+                "l": "kvinde"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "range",
+          "name": "alder",
+          "expression": "value",
+          "columnName": "alder",
+          "from": 20,
+          "to": 30,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        },
+        {
+          "type": "list",
+          "name": "civilstand",
+          "expression": "value",
+          "columnName": "civilstand",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "ugift",
+                "l": "ugift"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "erhverv",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Sengeliggende og nyder Almisse af Sognet"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Syg"
+      }
+    ],
+    "description": "Mass edit cells in column erhverv"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "koen",
+          "expression": "value",
+          "columnName": "koen",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "kvinde",
+                "l": "kvinde"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "range",
+          "name": "alder",
+          "expression": "value",
+          "columnName": "alder",
+          "from": 20,
+          "to": 30,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        },
+        {
+          "type": "list",
+          "name": "civilstand",
+          "expression": "value",
+          "columnName": "civilstand",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "ugift",
+                "l": "ugift"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "erhverv",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Nærer sig ved Skrædersyning"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Skrædder"
+      }
+    ],
+    "description": "Mass edit cells in column erhverv"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "koen",
+          "expression": "value",
+          "columnName": "koen",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "kvinde",
+                "l": "kvinde"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "range",
+          "name": "alder",
+          "expression": "value",
+          "columnName": "alder",
+          "from": 20,
+          "to": 30,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        },
+        {
+          "type": "list",
+          "name": "civilstand",
+          "expression": "value",
+          "columnName": "civilstand",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "ugift",
+                "l": "ugift"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "erhverv",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Nærer sig og Moder ved at væve"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Væver"
+      }
+    ],
+    "description": "Mass edit cells in column erhverv"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "koen",
+          "expression": "value",
+          "columnName": "koen",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "kvinde",
+                "l": "kvinde"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "range",
+          "name": "alder",
+          "expression": "value",
+          "columnName": "alder",
+          "from": 20,
+          "to": 30,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        },
+        {
+          "type": "list",
+          "name": "civilstand",
+          "expression": "value",
+          "columnName": "civilstand",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "ugift",
+                "l": "ugift"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "erhverv",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "lærer at væve"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Væver"
+      }
+    ],
+    "description": "Mass edit cells in column erhverv"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "koen",
+          "expression": "value",
+          "columnName": "koen",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "kvinde",
+                "l": "kvinde"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "range",
+          "name": "alder",
+          "expression": "value",
+          "columnName": "alder",
+          "from": 20,
+          "to": 30,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        },
+        {
+          "type": "list",
+          "name": "civilstand",
+          "expression": "value",
+          "columnName": "civilstand",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "ugift",
+                "l": "ugift"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "erhverv",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "ligger ved Sengen, og Underholdes af sin Broder"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Syg"
+      }
+    ],
+    "description": "Mass edit cells in column erhverv"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "koen",
+          "expression": "value",
+          "columnName": "koen",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "kvinde",
+                "l": "kvinde"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "range",
+          "name": "alder",
+          "expression": "value",
+          "columnName": "alder",
+          "from": 20,
+          "to": 30,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        },
+        {
+          "type": "list",
+          "name": "civilstand",
+          "expression": "value",
+          "columnName": "civilstand",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "ugift",
+                "l": "ugift"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "erhverv",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "ligesaa Skræderske"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Skrædder"
+      }
+    ],
+    "description": "Mass edit cells in column erhverv"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "koen",
+          "expression": "value",
+          "columnName": "koen",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "kvinde",
+                "l": "kvinde"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "range",
+          "name": "alder",
+          "expression": "value",
+          "columnName": "alder",
+          "from": 20,
+          "to": 30,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        },
+        {
+          "type": "list",
+          "name": "civilstand",
+          "expression": "value",
+          "columnName": "civilstand",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "ugift",
+                "l": "ugift"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "erhverv",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "lever af sine midler og familiens understøttelse"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Almisse"
+      }
+    ],
+    "description": "Mass edit cells in column erhverv"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "koen",
+          "expression": "value",
+          "columnName": "koen",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "kvinde",
+                "l": "kvinde"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "range",
+          "name": "alder",
+          "expression": "value",
+          "columnName": "alder",
+          "from": 20,
+          "to": 30,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        },
+        {
+          "type": "list",
+          "name": "civilstand",
+          "expression": "value",
+          "columnName": "civilstand",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "ugift",
+                "l": "ugift"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "erhverv",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "lever af at spinde"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Spinde"
+      }
+    ],
+    "description": "Mass edit cells in column erhverv"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "koen",
+          "expression": "value",
+          "columnName": "koen",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "kvinde",
+                "l": "kvinde"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "range",
+          "name": "alder",
+          "expression": "value",
+          "columnName": "alder",
+          "from": 20,
+          "to": 30,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        },
+        {
+          "type": "list",
+          "name": "civilstand",
+          "expression": "value",
+          "columnName": "civilstand",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "ugift",
+                "l": "ugift"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "erhverv",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "lever af almisse"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Almisse"
+      }
+    ],
+    "description": "Mass edit cells in column erhverv"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "koen",
+          "expression": "value",
+          "columnName": "koen",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "kvinde",
+                "l": "kvinde"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "range",
+          "name": "alder",
+          "expression": "value",
+          "columnName": "alder",
+          "from": 20,
+          "to": 30,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        },
+        {
+          "type": "list",
+          "name": "civilstand",
+          "expression": "value",
+          "columnName": "civilstand",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "ugift",
+                "l": "ugift"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "erhverv",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "krøbling, har Hospitalshold"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Invalid"
+      }
+    ],
+    "description": "Mass edit cells in column erhverv"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "koen",
+          "expression": "value",
+          "columnName": "koen",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "kvinde",
+                "l": "kvinde"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "range",
+          "name": "alder",
+          "expression": "value",
+          "columnName": "alder",
+          "from": 20,
+          "to": 30,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        },
+        {
+          "type": "list",
+          "name": "civilstand",
+          "expression": "value",
+          "columnName": "civilstand",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "ugift",
+                "l": "ugift"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "erhverv",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "kokkepige"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Husholderske"
+      }
+    ],
+    "description": "Mass edit cells in column erhverv"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "koen",
+          "expression": "value",
+          "columnName": "koen",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "kvinde",
+                "l": "kvinde"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "range",
+          "name": "alder",
+          "expression": "value",
+          "columnName": "alder",
+          "from": 20,
+          "to": 30,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        },
+        {
+          "type": "list",
+          "name": "civilstand",
+          "expression": "value",
+          "columnName": "civilstand",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "ugift",
+                "l": "ugift"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "erhverv",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Kokkepige"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Husholderske"
+      }
+    ],
+    "description": "Mass edit cells in column erhverv"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "koen",
+          "expression": "value",
+          "columnName": "koen",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "kvinde",
+                "l": "kvinde"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "range",
+          "name": "alder",
+          "expression": "value",
+          "columnName": "alder",
+          "from": 20,
+          "to": 30,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        },
+        {
+          "type": "list",
+          "name": "civilstand",
+          "expression": "value",
+          "columnName": "civilstand",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "ugift",
+                "l": "ugift"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "erhverv",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Indsiddere og nyder Almisse af Sognet"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Almisse"
+      }
+    ],
+    "description": "Mass edit cells in column erhverv"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "koen",
+          "expression": "value",
+          "columnName": "koen",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "kvinde",
+                "l": "kvinde"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "range",
+          "name": "alder",
+          "expression": "value",
+          "columnName": "alder",
+          "from": 20,
+          "to": 30,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        },
+        {
+          "type": "list",
+          "name": "civilstand",
+          "expression": "value",
+          "columnName": "civilstand",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "ugift",
+                "l": "ugift"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "erhverv",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "indsidder og væver"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Væver"
+      }
+    ],
+    "description": "Mass edit cells in column erhverv"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "koen",
+          "expression": "value",
+          "columnName": "koen",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "kvinde",
+                "l": "kvinde"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "range",
+          "name": "alder",
+          "expression": "value",
+          "columnName": "alder",
+          "from": 20,
+          "to": 30,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        },
+        {
+          "type": "list",
+          "name": "civilstand",
+          "expression": "value",
+          "columnName": "civilstand",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "ugift",
+                "l": "ugift"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "erhverv",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Indsidder og Væver"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Væver"
+      }
+    ],
+    "description": "Mass edit cells in column erhverv"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "koen",
+          "expression": "value",
+          "columnName": "koen",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "kvinde",
+                "l": "kvinde"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "range",
+          "name": "alder",
+          "expression": "value",
+          "columnName": "alder",
+          "from": 20,
+          "to": 30,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        },
+        {
+          "type": "list",
+          "name": "civilstand",
+          "expression": "value",
+          "columnName": "civilstand",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "ugift",
+                "l": "ugift"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "erhverv",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "indsidder"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Indsidder"
+      }
+    ],
+    "description": "Mass edit cells in column erhverv"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "koen",
+          "expression": "value",
+          "columnName": "koen",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "kvinde",
+                "l": "kvinde"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "range",
+          "name": "alder",
+          "expression": "value",
+          "columnName": "alder",
+          "from": 20,
+          "to": 30,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        },
+        {
+          "type": "list",
+          "name": "civilstand",
+          "expression": "value",
+          "columnName": "civilstand",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "ugift",
+                "l": "ugift"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "erhverv",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Inderste og Wæwer"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Væver"
+      }
+    ],
+    "description": "Mass edit cells in column erhverv"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "koen",
+          "expression": "value",
+          "columnName": "koen",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "kvinde",
+                "l": "kvinde"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "range",
+          "name": "alder",
+          "expression": "value",
+          "columnName": "alder",
+          "from": 20,
+          "to": 30,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        },
+        {
+          "type": "list",
+          "name": "civilstand",
+          "expression": "value",
+          "columnName": "civilstand",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "ugift",
+                "l": "ugift"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "erhverv",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Inderste og Wæver"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Væver"
+      }
+    ],
+    "description": "Mass edit cells in column erhverv"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "koen",
+          "expression": "value",
+          "columnName": "koen",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "kvinde",
+                "l": "kvinde"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "range",
+          "name": "alder",
+          "expression": "value",
+          "columnName": "alder",
+          "from": 20,
+          "to": 30,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        },
+        {
+          "type": "list",
+          "name": "civilstand",
+          "expression": "value",
+          "columnName": "civilstand",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "ugift",
+                "l": "ugift"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "erhverv",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Inderste og Vævpige"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Væver"
+      }
+    ],
+    "description": "Mass edit cells in column erhverv"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "koen",
+          "expression": "value",
+          "columnName": "koen",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "kvinde",
+                "l": "kvinde"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "range",
+          "name": "alder",
+          "expression": "value",
+          "columnName": "alder",
+          "from": 20,
+          "to": 30,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        },
+        {
+          "type": "list",
+          "name": "civilstand",
+          "expression": "value",
+          "columnName": "civilstand",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "ugift",
+                "l": "ugift"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "erhverv",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "inderste og væverpige"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Væver"
+      }
+    ],
+    "description": "Mass edit cells in column erhverv"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "koen",
+          "expression": "value",
+          "columnName": "koen",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "kvinde",
+                "l": "kvinde"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "range",
+          "name": "alder",
+          "expression": "value",
+          "columnName": "alder",
+          "from": 20,
+          "to": 30,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        },
+        {
+          "type": "list",
+          "name": "civilstand",
+          "expression": "value",
+          "columnName": "civilstand",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "ugift",
+                "l": "ugift"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "erhverv",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "inderste og spinderske"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Spinder"
+      }
+    ],
+    "description": "Mass edit cells in column erhverv"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "koen",
+          "expression": "value",
+          "columnName": "koen",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "kvinde",
+                "l": "kvinde"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "range",
+          "name": "alder",
+          "expression": "value",
+          "columnName": "alder",
+          "from": 20,
+          "to": 30,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        },
+        {
+          "type": "list",
+          "name": "civilstand",
+          "expression": "value",
+          "columnName": "civilstand",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "ugift",
+                "l": "ugift"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "erhverv",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Inderste og Spindekone"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Spinder"
+      }
+    ],
+    "description": "Mass edit cells in column erhverv"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "koen",
+          "expression": "value",
+          "columnName": "koen",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "kvinde",
+                "l": "kvinde"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "range",
+          "name": "alder",
+          "expression": "value",
+          "columnName": "alder",
+          "from": 20,
+          "to": 30,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        },
+        {
+          "type": "list",
+          "name": "civilstand",
+          "expression": "value",
+          "columnName": "civilstand",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "ugift",
+                "l": "ugift"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "erhverv",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Inderste der ellers er udi fast Tieneste"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Tjenestepige"
+      }
+    ],
+    "description": "Mass edit cells in column erhverv"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "koen",
+          "expression": "value",
+          "columnName": "koen",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "kvinde",
+                "l": "kvinde"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "range",
+          "name": "alder",
+          "expression": "value",
+          "columnName": "alder",
+          "from": 20,
+          "to": 30,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        },
+        {
+          "type": "list",
+          "name": "civilstand",
+          "expression": "value",
+          "columnName": "civilstand",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "ugift",
+                "l": "ugift"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "erhverv",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Huusjomfrue"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Husholderske"
+      }
+    ],
+    "description": "Mass edit cells in column erhverv"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "koen",
+          "expression": "value",
+          "columnName": "koen",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "kvinde",
+                "l": "kvinde"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "range",
+          "name": "alder",
+          "expression": "value",
+          "columnName": "alder",
+          "from": 20,
+          "to": 30,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        },
+        {
+          "type": "list",
+          "name": "civilstand",
+          "expression": "value",
+          "columnName": "civilstand",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "ugift",
+                "l": "ugift"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "erhverv",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Huusholderske"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Husholderske"
+      }
+    ],
+    "description": "Mass edit cells in column erhverv"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "koen",
+          "expression": "value",
+          "columnName": "koen",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "kvinde",
+                "l": "kvinde"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "range",
+          "name": "alder",
+          "expression": "value",
+          "columnName": "alder",
+          "from": 20,
+          "to": 30,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        },
+        {
+          "type": "list",
+          "name": "civilstand",
+          "expression": "value",
+          "columnName": "civilstand",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "ugift",
+                "l": "ugift"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "erhverv",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Huus Jomfrue"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Husholderske"
+      }
+    ],
+    "description": "Mass edit cells in column erhverv"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "koen",
+          "expression": "value",
+          "columnName": "koen",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "kvinde",
+                "l": "kvinde"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "range",
+          "name": "alder",
+          "expression": "value",
+          "columnName": "alder",
+          "from": 20,
+          "to": 30,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        },
+        {
+          "type": "list",
+          "name": "civilstand",
+          "expression": "value",
+          "columnName": "civilstand",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "ugift",
+                "l": "ugift"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "erhverv",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Huus - Jomfrue"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Husholderske"
+      }
+    ],
+    "description": "Mass edit cells in column erhverv"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "koen",
+          "expression": "value",
+          "columnName": "koen",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "kvinde",
+                "l": "kvinde"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "range",
+          "name": "alder",
+          "expression": "value",
+          "columnName": "alder",
+          "from": 20,
+          "to": 30,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        },
+        {
+          "type": "list",
+          "name": "civilstand",
+          "expression": "value",
+          "columnName": "civilstand",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "ugift",
+                "l": "ugift"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "erhverv",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "husjomfru"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Husholderske"
+      }
+    ],
+    "description": "Mass edit cells in column erhverv"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "koen",
+          "expression": "value",
+          "columnName": "koen",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "kvinde",
+                "l": "kvinde"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "range",
+          "name": "alder",
+          "expression": "value",
+          "columnName": "alder",
+          "from": 20,
+          "to": 30,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        },
+        {
+          "type": "list",
+          "name": "civilstand",
+          "expression": "value",
+          "columnName": "civilstand",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "ugift",
+                "l": "ugift"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "erhverv",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "husholderske"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Husholderske"
+      }
+    ],
+    "description": "Mass edit cells in column erhverv"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "koen",
+          "expression": "value",
+          "columnName": "koen",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "kvinde",
+                "l": "kvinde"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "range",
+          "name": "alder",
+          "expression": "value",
+          "columnName": "alder",
+          "from": 20,
+          "to": 30,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        },
+        {
+          "type": "list",
+          "name": "civilstand",
+          "expression": "value",
+          "columnName": "civilstand",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "ugift",
+                "l": "ugift"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "erhverv",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "hospitalslem"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Syg"
+      }
+    ],
+    "description": "Mass edit cells in column erhverv"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "koen",
+          "expression": "value",
+          "columnName": "koen",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "kvinde",
+                "l": "kvinde"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "range",
+          "name": "alder",
+          "expression": "value",
+          "columnName": "alder",
+          "from": 20,
+          "to": 30,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        },
+        {
+          "type": "list",
+          "name": "civilstand",
+          "expression": "value",
+          "columnName": "civilstand",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "ugift",
+                "l": "ugift"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "erhverv",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "hospitals lem"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Syg"
+      }
+    ],
+    "description": "Mass edit cells in column erhverv"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "koen",
+          "expression": "value",
+          "columnName": "koen",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "kvinde",
+                "l": "kvinde"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "range",
+          "name": "alder",
+          "expression": "value",
+          "columnName": "alder",
+          "from": 20,
+          "to": 30,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        },
+        {
+          "type": "list",
+          "name": "civilstand",
+          "expression": "value",
+          "columnName": "civilstand",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "ugift",
+                "l": "ugift"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "erhverv",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Har Skade i fødderne lever af [bemte Hospitals Hold]"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Invalid"
+      }
+    ],
+    "description": "Mass edit cells in column erhverv"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "koen",
+          "expression": "value",
+          "columnName": "koen",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "kvinde",
+                "l": "kvinde"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "range",
+          "name": "alder",
+          "expression": "value",
+          "columnName": "alder",
+          "from": 20,
+          "to": 30,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        },
+        {
+          "type": "list",
+          "name": "civilstand",
+          "expression": "value",
+          "columnName": "civilstand",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "ugift",
+                "l": "ugift"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "erhverv",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Har ligeledes alt frit paa Gaarden"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Gårdfrue"
+      }
+    ],
+    "description": "Mass edit cells in column erhverv"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "koen",
+          "expression": "value",
+          "columnName": "koen",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "kvinde",
+                "l": "kvinde"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "range",
+          "name": "alder",
+          "expression": "value",
+          "columnName": "alder",
+          "from": 20,
+          "to": 30,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        },
+        {
+          "type": "list",
+          "name": "civilstand",
+          "expression": "value",
+          "columnName": "civilstand",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "ugift",
+                "l": "ugift"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "erhverv",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Har alt frit paa Gaarden"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Gårdfrue"
+      }
+    ],
+    "description": "Mass edit cells in column erhverv"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "koen",
+          "expression": "value",
+          "columnName": "koen",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "kvinde",
+                "l": "kvinde"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "range",
+          "name": "alder",
+          "expression": "value",
+          "columnName": "alder",
+          "from": 20,
+          "to": 30,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        },
+        {
+          "type": "list",
+          "name": "civilstand",
+          "expression": "value",
+          "columnName": "civilstand",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "ugift",
+                "l": "ugift"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "erhverv",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Gaardbeboer"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Gårdfrue"
+      }
+    ],
+    "description": "Mass edit cells in column erhverv"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "koen",
+          "expression": "value",
+          "columnName": "koen",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "kvinde",
+                "l": "kvinde"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "range",
+          "name": "alder",
+          "expression": "value",
+          "columnName": "alder",
+          "from": 20,
+          "to": 30,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        },
+        {
+          "type": "list",
+          "name": "civilstand",
+          "expression": "value",
+          "columnName": "civilstand",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "ugift",
+                "l": "ugift"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "erhverv",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "ernærer sig ved at Spinde"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Spinder"
+      }
+    ],
+    "description": "Mass edit cells in column erhverv"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "koen",
+          "expression": "value",
+          "columnName": "koen",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "kvinde",
+                "l": "kvinde"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "range",
+          "name": "alder",
+          "expression": "value",
+          "columnName": "alder",
+          "from": 20,
+          "to": 30,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        },
+        {
+          "type": "list",
+          "name": "civilstand",
+          "expression": "value",
+          "columnName": "civilstand",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "ugift",
+                "l": "ugift"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "erhverv",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "ernærer sig af syning"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Syerske"
+      }
+    ],
+    "description": "Mass edit cells in column erhverv"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "koen",
+          "expression": "value",
+          "columnName": "koen",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "kvinde",
+                "l": "kvinde"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "range",
+          "name": "alder",
+          "expression": "value",
+          "columnName": "alder",
+          "from": 20,
+          "to": 30,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        },
+        {
+          "type": "list",
+          "name": "civilstand",
+          "expression": "value",
+          "columnName": "civilstand",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "ugift",
+                "l": "ugift"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "erhverv",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Er Hospitals Lem"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Syg"
+      }
+    ],
+    "description": "Mass edit cells in column erhverv"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "koen",
+          "expression": "value",
+          "columnName": "koen",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "kvinde",
+                "l": "kvinde"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "range",
+          "name": "alder",
+          "expression": "value",
+          "columnName": "alder",
+          "from": 20,
+          "to": 30,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        },
+        {
+          "type": "list",
+          "name": "civilstand",
+          "expression": "value",
+          "columnName": "civilstand",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "ugift",
+                "l": "ugift"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "erhverv",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Ejer et Jordløs Huus og er Væverske"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Væver"
+      }
+    ],
+    "description": "Mass edit cells in column erhverv"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "koen",
+          "expression": "value",
+          "columnName": "koen",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "kvinde",
+                "l": "kvinde"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "range",
+          "name": "alder",
+          "expression": "value",
+          "columnName": "alder",
+          "from": 20,
+          "to": 30,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        },
+        {
+          "type": "list",
+          "name": "civilstand",
+          "expression": "value",
+          "columnName": "civilstand",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "ugift",
+                "l": "ugift"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "erhverv",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "dum og døv"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Invalid"
+      }
+    ],
+    "description": "Mass edit cells in column erhverv"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "koen",
+          "expression": "value",
+          "columnName": "koen",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "kvinde",
+                "l": "kvinde"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "range",
+          "name": "alder",
+          "expression": "value",
+          "columnName": "alder",
+          "from": 20,
+          "to": 30,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        },
+        {
+          "type": "list",
+          "name": "civilstand",
+          "expression": "value",
+          "columnName": "civilstand",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "ugift",
+                "l": "ugift"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "erhverv",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "bryggerspige"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Brygger"
+      }
+    ],
+    "description": "Mass edit cells in column erhverv"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "koen",
+          "expression": "value",
+          "columnName": "koen",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "kvinde",
+                "l": "kvinde"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "range",
+          "name": "alder",
+          "expression": "value",
+          "columnName": "alder",
+          "from": 20,
+          "to": 30,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        },
+        {
+          "type": "list",
+          "name": "civilstand",
+          "expression": "value",
+          "columnName": "civilstand",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "ugift",
+                "l": "ugift"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "erhverv",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Bryggerpige"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "brygger"
+      }
+    ],
+    "description": "Mass edit cells in column erhverv"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "koen",
+          "expression": "value",
+          "columnName": "koen",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "kvinde",
+                "l": "kvinde"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "range",
+          "name": "alder",
+          "expression": "value",
+          "columnName": "alder",
+          "from": 20,
+          "to": 30,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        },
+        {
+          "type": "list",
+          "name": "civilstand",
+          "expression": "value",
+          "columnName": "civilstand",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "ugift",
+                "l": "ugift"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "erhverv",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Besvangret"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Gravid"
+      }
+    ],
+    "description": "Mass edit cells in column erhverv"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "koen",
+          "expression": "value",
+          "columnName": "koen",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "kvinde",
+                "l": "kvinde"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "range",
+          "name": "alder",
+          "expression": "value",
+          "columnName": "alder",
+          "from": 20,
+          "to": 30,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        },
+        {
+          "type": "list",
+          "name": "civilstand",
+          "expression": "value",
+          "columnName": "civilstand",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "ugift",
+                "l": "ugift"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "erhverv",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Bege Vandfør og nyder Almisse af Sognet"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Almisse"
+      }
+    ],
+    "description": "Mass edit cells in column erhverv"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "koen",
+          "expression": "value",
+          "columnName": "koen",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "kvinde",
+                "l": "kvinde"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "range",
+          "name": "alder",
+          "expression": "value",
+          "columnName": "alder",
+          "from": 20,
+          "to": 30,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        },
+        {
+          "type": "list",
+          "name": "civilstand",
+          "expression": "value",
+          "columnName": "civilstand",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "ugift",
+                "l": "ugift"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "erhverv",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Almisselem"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Almisse"
+      }
+    ],
+    "description": "Mass edit cells in column erhverv"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "koen",
+          "expression": "value",
+          "columnName": "koen",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "kvinde",
+                "l": "kvinde"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "range",
+          "name": "alder",
+          "expression": "value",
+          "columnName": "alder",
+          "from": 20,
+          "to": 30,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        },
+        {
+          "type": "list",
+          "name": "civilstand",
+          "expression": "value",
+          "columnName": "civilstand",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "ugift",
+                "l": "ugift"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "erhverv",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "vanvittig Almisselem"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Syg"
+      }
+    ],
+    "description": "Mass edit cells in column erhverv"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "koen",
+          "expression": "value",
+          "columnName": "koen",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "kvinde",
+                "l": "kvinde"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "range",
+          "name": "alder",
+          "expression": "value",
+          "columnName": "alder",
+          "from": 20,
+          "to": 30,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        },
+        {
+          "type": "list",
+          "name": "civilstand",
+          "expression": "value",
+          "columnName": "civilstand",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "ugift",
+                "l": "ugift"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "erhverv",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Underholdes af familien"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Invalid"
+      }
+    ],
+    "description": "Mass edit cells in column erhverv"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "koen",
+          "expression": "value",
+          "columnName": "koen",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "kvinde",
+                "l": "kvinde"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "range",
+          "name": "alder",
+          "expression": "value",
+          "columnName": "alder",
+          "from": 20,
+          "to": 30,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        },
+        {
+          "type": "list",
+          "name": "civilstand",
+          "expression": "value",
+          "columnName": "civilstand",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "ugift",
+                "l": "ugift"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "erhverv",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Plejer den Gamle, af hvem hun er opfødt"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Tjenestepige"
+      }
+    ],
+    "description": "Mass edit cells in column erhverv"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "koen",
+          "expression": "value",
+          "columnName": "koen",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "kvinde",
+                "l": "kvinde"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "range",
+          "name": "alder",
+          "expression": "value",
+          "columnName": "alder",
+          "from": 20,
+          "to": 30,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        },
+        {
+          "type": "list",
+          "name": "civilstand",
+          "expression": "value",
+          "columnName": "civilstand",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "ugift",
+                "l": "ugift"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "erhverv",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Nærer sig og Moder wed at gaae i Dagleje"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Daglejer"
+      }
+    ],
+    "description": "Mass edit cells in column erhverv"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "koen",
+          "expression": "value",
+          "columnName": "koen",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "kvinde",
+                "l": "kvinde"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "range",
+          "name": "alder",
+          "expression": "value",
+          "columnName": "alder",
+          "from": 20,
+          "to": 30,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        },
+        {
+          "type": "list",
+          "name": "civilstand",
+          "expression": "value",
+          "columnName": "civilstand",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "ugift",
+                "l": "ugift"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "erhverv",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Halter og nærer sig ved Syening og Dagleie"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Syerske"
+      }
+    ],
+    "description": "Mass edit cells in column erhverv"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "koen",
+          "expression": "value",
+          "columnName": "koen",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "kvinde",
+                "l": "kvinde"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "range",
+          "name": "alder",
+          "expression": "value",
+          "columnName": "alder",
+          "from": 20,
+          "to": 30,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        },
+        {
+          "type": "list",
+          "name": "civilstand",
+          "expression": "value",
+          "columnName": "civilstand",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "ugift",
+                "l": "ugift"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "erhverv",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "daglejer"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Daglejer"
+      }
+    ],
+    "description": "Mass edit cells in column erhverv"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "koen",
+          "expression": "value",
+          "columnName": "koen",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "kvinde",
+                "l": "kvinde"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "range",
+          "name": "alder",
+          "expression": "value",
+          "columnName": "alder",
+          "from": 20,
+          "to": 30,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        },
+        {
+          "type": "list",
+          "name": "civilstand",
+          "expression": "value",
+          "columnName": "civilstand",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "ugift",
+                "l": "ugift"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "erhverv",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "afdød Selveier Anders Jensens Huus med Jord"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Selvejer"
+      }
+    ],
+    "description": "Mass edit cells in column erhverv"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "koen",
+          "expression": "value",
+          "columnName": "koen",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "kvinde",
+                "l": "kvinde"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "range",
+          "name": "alder",
+          "expression": "value",
+          "columnName": "alder",
+          "from": 20,
+          "to": 30,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        },
+        {
+          "type": "list",
+          "name": "civilstand",
+          "expression": "value",
+          "columnName": "civilstand",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "ugift",
+                "l": "ugift"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "erhverv",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Gårdfrue"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Selvejer"
+      }
+    ],
+    "description": "Mass edit cells in column erhverv"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "koen",
+          "expression": "value",
+          "columnName": "koen",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "kvinde",
+                "l": "kvinde"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "range",
+          "name": "alder",
+          "expression": "value",
+          "columnName": "alder",
+          "from": 20,
+          "to": 30,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        },
+        {
+          "type": "list",
+          "name": "civilstand",
+          "expression": "value",
+          "columnName": "civilstand",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "ugift",
+                "l": "ugift"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "erhverv",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "lever af hendes midler"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Lever af sine midler"
+      }
+    ],
+    "description": "Mass edit cells in column erhverv"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "koen",
+          "expression": "value",
+          "columnName": "koen",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "kvinde",
+                "l": "kvinde"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "range",
+          "name": "alder",
+          "expression": "value",
+          "columnName": "alder",
+          "from": 20,
+          "to": 30,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        },
+        {
+          "type": "list",
+          "name": "civilstand",
+          "expression": "value",
+          "columnName": "civilstand",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "ugift",
+                "l": "ugift"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "erhverv",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Lever af sine midler"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "lever af sine midler"
+      }
+    ],
+    "description": "Mass edit cells in column erhverv"
+  }
+]

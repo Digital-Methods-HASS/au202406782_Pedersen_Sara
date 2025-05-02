@@ -1,0 +1,577 @@
+[
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "interview_date",
+    "expression": "value.toDate()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column interview_date using expression value.toDate()"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "village",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Ruaca",
+          "Ruca"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Ruaca"
+      },
+      {
+        "from": [
+          "Ruaca-Nhamuenda",
+          "Ruaca - Nhamuenda"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Ruaca"
+      }
+    ],
+    "description": "Mass edit cells in column village"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "village",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Chirodzo",
+          "Chirdozo"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Chirodzo"
+      }
+    ],
+    "description": "Mass edit cells in column village"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "items_owned",
+    "expression": "grel:value.replace(\"[\",\"\").replace(\"]\",\"\").replace(\" \",\"\").replace(\"'\",\"\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column items_owned using expression grel:value.replace(\"[\",\"\").replace(\"]\",\"\").replace(\" \",\"\").replace(\"'\",\"\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "items_owned",
+    "expression": "grel:value.replace(\"[\",\"\").replace(\"]\",\"\").replace(\"  \",\"\").replace(\"'\",\"\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column items_owned using expression grel:value.replace(\"[\",\"\").replace(\"]\",\"\").replace(\"  \",\"\").replace(\"'\",\"\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "months_no_water",
+    "expression": "grel:value.replace(\"[\").replace(\"[\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column months_no_water using expression grel:value.replace(\"[\").replace(\"[\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "months_no_water",
+    "expression": "grel:value.split(\";\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column months_no_water using expression grel:value.split(\";\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "months_no_water",
+    "expression": "grel:value.replace(\"[\",\"\").replace(\"]\",\"\").replace(\"  \",\"\").replace(\"'\",\"\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column months_no_water using expression grel:value.replace(\"[\",\"\").replace(\"]\",\"\").replace(\"  \",\"\").replace(\"'\",\"\")"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "months_no_water",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Aug ;Sept ;Oct ;Nov",
+          "Aug ;Sept ;Oct ;Nov ;Dec"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Aug ;Sept ;Oct ;Nov"
+      }
+    ],
+    "description": "Mass edit cells in column months_no_water"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "months_no_water",
+    "expression": "grel:value.split(\";\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column months_no_water using expression grel:value.split(\";\")"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "months_no_water",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Sept ;Oct ;Nov",
+          "Aug ;Sept ;Oct ;Nov",
+          "Sept ;Oct",
+          "Sept ;Oct ;Nov ;Dec"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Sept ;Oct ;Nov"
+      },
+      {
+        "from": [
+          "Aug ;Sept ;Oct ;Nov",
+          "Sept ;Oct",
+          "Aug ;Sept ;Oct",
+          "Aug ;Sept"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Aug ;Sept ;Oct ;Nov"
+      },
+      {
+        "from": [
+          "Sept ;Oct ;Nov",
+          "Sept ;Oct",
+          "Aug ;Sept ;Oct"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Sept ;Oct ;Nov"
+      },
+      {
+        "from": [
+          "Aug ;Sept ;Oct ;Nov",
+          "Sept ;Oct",
+          "Aug ;Sept ;Oct"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Aug ;Sept ;Oct ;Nov"
+      },
+      {
+        "from": [
+          "Sept ;Oct ;Nov",
+          "Aug ;Sept ;Oct ;Nov",
+          "Sept ;Oct ;Nov ;Dec"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Sept ;Oct ;Nov"
+      },
+      {
+        "from": [
+          "Sept ;Oct ;Nov",
+          "Aug ;Sept ;Oct ;Nov",
+          "Aug ;Sept ;Oct"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Sept ;Oct ;Nov"
+      },
+      {
+        "from": [
+          "Aug ;Sept ;Oct ;Nov",
+          "Aug ;Sept ;Oct",
+          "Aug ;Sept"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Aug ;Sept ;Oct ;Nov"
+      },
+      {
+        "from": [
+          "Aug ;Sept ;Oct ;Nov",
+          "Aug ;Sept ;Oct"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Aug ;Sept ;Oct ;Nov"
+      },
+      {
+        "from": [
+          "Aug ;Sept ;Oct",
+          "Aug ;Sept"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Aug ;Sept ;Oct"
+      },
+      {
+        "from": [
+          "Oct ;Nov",
+          "Oct ;Nov ;Dec"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Oct ;Nov"
+      },
+      {
+        "from": [
+          "Sept ;Oct ;Nov",
+          "Aug ;Sept ;Oct ;Nov"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Sept ;Oct ;Nov"
+      },
+      {
+        "from": [
+          "Nov ;Dec",
+          "Oct ;Nov ;Dec"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Nov ;Dec"
+      },
+      {
+        "from": [
+          "Sept ;Oct ;Nov",
+          "Sept ;Oct ;Nov ;Dec"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Sept ;Oct ;Nov"
+      }
+    ],
+    "description": "Mass edit cells in column months_no_water"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "months_no_water",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Sept ;Oct ;Nov",
+          "Aug ;Sept ;Oct",
+          "Aug ;Sept ;Oct ;Nov"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Sept ;Oct ;Nov"
+      },
+      {
+        "from": [
+          "Sept ;Oct ;Nov",
+          "Aug ;Sept ;Oct ;Nov"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Sept ;Oct ;Nov"
+      },
+      {
+        "from": [
+          "Aug ;Sept ;Oct",
+          "Aug ;Sept ;Oct ;Nov"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Aug ;Sept ;Oct"
+      }
+    ],
+    "description": "Mass edit cells in column months_no_water"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "no_food_mitigation",
+    "expression": "grel:value.replace(\"[\",\"\").replace(\"]\",\"\").replace(\"  \",\"\").replace(\"'\",\"\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column no_food_mitigation using expression grel:value.replace(\"[\",\"\").replace(\"]\",\"\").replace(\"  \",\"\").replace(\"'\",\"\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "months_no_water",
+    "expression": "grel:value.split(\" \")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column months_no_water using expression grel:value.split(\" \")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "months_no_water",
+    "expression": "grel:value.replace(\"[\",\"\").replace(\"]\",\"\").replace(\"  \",\"\").replace(\"'\",\"\").replace(\" \",\"\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column months_no_water using expression grel:value.replace(\"[\",\"\").replace(\"]\",\"\").replace(\"  \",\"\").replace(\"'\",\"\").replace(\" \",\"\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "months_no_water",
+          "expression": "grel:facetCount(value.split(\";\"), \"grel:value.split(\\\";\\\")\", \"months_no_water\")",
+          "columnName": "months_no_water",
+          "from": 1,
+          "to": 71,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "months_no_water",
+    "expression": "grel:value.replace(\"[\",\"\").replace(\"]\",\"\").replace(\"  \",\"\").replace(\"'\",\"\").replace(\" \",\"\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column months_no_water using expression grel:value.replace(\"[\",\"\").replace(\"]\",\"\").replace(\"  \",\"\").replace(\"'\",\"\").replace(\" \",\"\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "months_no_water",
+    "expression": "grel:value.replace(\"[\",\"\").replace(\"]\",\"\").replace(\"  \",\"\").replace(\"'\",\"\").replace(\" \",\"\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column months_no_water using expression grel:value.replace(\"[\",\"\").replace(\"]\",\"\").replace(\"  \",\"\").replace(\"'\",\"\").replace(\" \",\"\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "months_no_water",
+          "expression": "grel:facetCount(value.split(\";\"), \"grel:value.split(\\\";\\\")\", \"months_no_water\")",
+          "columnName": "months_no_water",
+          "from": 1,
+          "to": 71,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "months_no_water",
+    "expression": "grel:value.replace(\"[\",\"\").replace(\"]\",\"\").replace(\"  \",\"\").replace(\"'\",\"\").replace(\" \",\"\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column months_no_water using expression grel:value.replace(\"[\",\"\").replace(\"]\",\"\").replace(\"  \",\"\").replace(\"'\",\"\").replace(\" \",\"\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "months_no_water",
+          "expression": "grel:facetCount(value.split(\";\"), \"grel:value.split(\\\";\\\")\", \"months_no_water\")",
+          "columnName": "months_no_water",
+          "from": 1,
+          "to": 71,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "months_no_water",
+    "expression": "grel:value",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column months_no_water using expression grel:value"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "months_no_water",
+          "expression": "grel:facetCount(value.split(\";\"), \"grel:value.split(\\\";\\\")\", \"months_no_water\")",
+          "columnName": "months_no_water",
+          "from": 1,
+          "to": 71,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "liv_owned",
+    "expression": "grel:value.replace(\"[\",\"\").replace(\"]\",\"\").replace(\"  \",\"\").replace(\"'\",\"\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column liv_owned using expression grel:value.replace(\"[\",\"\").replace(\"]\",\"\").replace(\"  \",\"\").replace(\"'\",\"\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "months_no_water",
+          "expression": "grel:facetCount(value.split(\";\"), \"grel:value.split(\\\";\\\")\", \"months_no_water\")",
+          "columnName": "months_no_water",
+          "from": 1,
+          "to": 71,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "months_lack_food",
+    "expression": "grel:value.replace(\"[\",\"\").replace(\"]\",\"\").replace(\"  \",\"\").replace(\"'\",\"\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column months_lack_food using expression grel:value.replace(\"[\",\"\").replace(\"]\",\"\").replace(\"  \",\"\").replace(\"'\",\"\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "months_no_water",
+          "expression": "grel:facetCount(value.split(\";\"), \"grel:value.split(\\\";\\\")\", \"months_no_water\")",
+          "columnName": "months_no_water",
+          "from": 1,
+          "to": 71,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "no_food_mitigation",
+    "expression": "grel:value.replace(\"[\",\"\").replace(\"]\",\"\").replace(\"  \",\"\").replace(\"'\",\"\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column no_food_mitigation using expression grel:value.replace(\"[\",\"\").replace(\"]\",\"\").replace(\"  \",\"\").replace(\"'\",\"\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "months_no_water",
+          "expression": "grel:facetCount(value.split(\";\"), \"grel:value.split(\\\";\\\")\", \"months_no_water\")",
+          "columnName": "months_no_water",
+          "from": 1,
+          "to": 71,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "no_food_mitigation",
+    "expression": "grel:value.split(\" \")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column no_food_mitigation using expression grel:value.split(\" \")"
+  }
+]
