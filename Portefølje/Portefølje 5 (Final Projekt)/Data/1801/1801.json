@@ -1,0 +1,7441 @@
+[
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "giftnr",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          ""
+        ],
+        "fromBlank": true,
+        "fromError": false,
+        "to": "NA"
+      }
+    ],
+    "description": "Mass edit cells in column giftnr"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "erhverv",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          ""
+        ],
+        "fromBlank": true,
+        "fromError": false,
+        "to": "NA"
+      }
+    ],
+    "description": "Mass edit cells in column erhverv"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "notater",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          ""
+        ],
+        "fromBlank": true,
+        "fromError": false,
+        "to": "NA"
+      }
+    ],
+    "description": "Mass edit cells in column notater"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "bygning",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          ""
+        ],
+        "fromBlank": true,
+        "fromError": false,
+        "to": "NA"
+      }
+    ],
+    "description": "Mass edit cells in column bygning"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "erhverv",
+    "expression": "grel:value",
+    "onError": "set-to-blank",
+    "newColumnName": "Erhverv_rensen",
+    "columnInsertIndex": 16,
+    "description": "Create column Erhverv_rensen at index 16 based on column erhverv using expression grel:value"
+  },
+  {
+    "op": "core/multivalued-cell-split",
+    "columnName": "Erhverv_rensen",
+    "keyColumnName": "ft",
+    "mode": "separator",
+    "separator": "og",
+    "regex": false,
+    "description": "Split multi-valued cells in column Erhverv_rensen"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Erhverv_rensen",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Erhverv_rensen using expression value.trim()"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Erhverv_rensen",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Jordløs Huusmand",
+          "jordløs huusmand",
+          "jordløs husmand",
+          "Jordløs huusmand",
+          "Jordløs Huusmand, Træskomand",
+          "jordløs Huusmand",
+          "jordløs huusmand, gaaer i dagleie",
+          "Jordløs Huusmand, Daglejer",
+          "Jordløs Huusmand, Smed",
+          "Jordløs Huusmand, gaaer i Dagleje",
+          "jordløs huusmand, daglejer",
+          "jordløs huusmand, gaaer i dagleje",
+          "Jordløs Husmand",
+          "Jordløs Huusmand gaaer i Dagleje",
+          "Jordløs Huusmand giør Træskoe",
+          "Jordløs Huus Mand",
+          "Jordløs Huusmand, Skræder",
+          "Jordløs Huusmand, Væver",
+          "jordløs huusmand, væver",
+          "jordløs husmand, går i dagleje",
+          "jordløs huusmand, tjener",
+          "Jordløs Huusmand, Snedker",
+          "Jordløs Huusmand, har fast tjeneste",
+          "Jordløs Husmand Dagleyer",
+          "Jordløs Huusmand Daglejer",
+          "Jordløs Huusmand gaar i Dagleje",
+          "Jordløs Huusmand,",
+          "Jordløs Huusmand, Digegraver",
+          "Jordløs Huusmand, Hiulmand",
+          "Jordløs Huusmand, Tømmermand",
+          "Jordløs Huusmand, gaaer i Dagleie",
+          "Jordløs Huusmand, gaar i Dagleje",
+          "Jordløs Huusmand, nyder Almisse",
+          "jordløs Huusmand, gaar i Dagleie",
+          "jordløs husmand, daglejer",
+          "jordløs husmand, hyrde",
+          "jordløs husmand, nyder almisse",
+          "jordløs huusmand, går i dagleje",
+          "jordløs huusmand, skræder",
+          "Jordløs Husmand Hyrde",
+          "Jordløs Husmand giør Bagkurve",
+          "Jordløs Husmand, Dagleyer",
+          "Jordløs Husmand, fattig",
+          "Jordløs Huus, manden tjener ude",
+          "Jordløs Huusmand - giør Træskoe",
+          "Jordløs Huusmand Drejer. National Rytter",
+          "Jordløs Huusmand Lever af Aftægt",
+          "Jordløs Huusmand Smed",
+          "Jordløs Huusmand Væver",
+          "Jordløs Huusmand gaaer i Dag Leie",
+          "Jordløs Huusmand gaar i Dag Leie",
+          "Jordløs Huusmand i fast Tieneste",
+          "Jordløs Huusmand nyder Almisse af S",
+          "Jordløs Huusmand samt Daglejer",
+          "Jordløs Huusmand samt Lægsdmand",
+          "Jordløs Huusmand som gaaer i Dagleie",
+          "Jordløs Huusmand vanfør",
+          "Jordløs Huusmand, ??",
+          "Jordløs Huusmand, Bødker",
+          "Jordløs Huusmand, Drejer",
+          "Jordløs Huusmand, Geworben Soldat, Træskomand",
+          "Jordløs Huusmand, Hjulmand",
+          "Jordløs Huusmand, Nationalsoldat",
+          "Jordløs Huusmand, Opholdsmand",
+          "Jordløs Huusmand, Podemand",
+          "Jordløs Huusmand, Skrædder",
+          "Jordløs Huusmand, Smed, Landrecrut",
+          "Jordløs Huusmand, Soldat, Væver",
+          "Jordløs Huusmand, Tømmer Sauger",
+          "Jordløs Huusmand, Væver, Skovf",
+          "Jordløs Huusmand, arbeider i Træ",
+          "Jordløs Huusmand, er Skoleholder om vinteren",
+          "Jordløs Huusmand, er meget vanfør i Ansigtet, [*]",
+          "Jordløs Huusmand, gaaer i Dagleje, Landartillerist",
+          "Jordløs Huusmand, gaar i dagleje",
+          "Jordløs Huusmand, han gaaer i Dagleie",
+          "Jordløs Huusmand, han gaaer i Dagleje",
+          "Jordløs Huusmand, i Dagleje",
+          "Jordløs Huusmand, lever af Fiskerie",
+          "Jordløs Huusmand, national Soldat",
+          "Jordløs Huusmand, samt Skræder",
+          "Jordløs Huusmand, som Tjener",
+          "Jordløs Huusmand, som nærer sig ved Tømmer, [*]",
+          "Jordløs Huusmand, spinder Tøyer Reb",
+          "Jordløs Huusmand, tjenestledig, gaaer i Dagleje",
+          "Jordløs Huusmand, v",
+          "Jordløs Huusmand. Dagleier",
+          "Jordløs Huusmand. Deres Næringsvei er at fiske spinde [*]",
+          "Jordløs Huusmand. Geworben Soldat",
+          "Jordløs Huusmand. Skræder",
+          "Jordløs huusmand Skræder",
+          "jordløs Huusmand, Hiulmand",
+          "jordløs husmand men har selv købt et stykke jord",
+          "jordløs husmand, aftægtsmand",
+          "jordløs husmand, geworben soldat",
+          "jordløs husmand, hjulmand",
+          "jordløs husmand, indsidder",
+          "jordløs husmand, murermester",
+          "jordløs husmand, skrædder",
+          "jordløs husmand, smed",
+          "jordløs husmand, tjener",
+          "jordløs husmand, tækkemand",
+          "jordløs husmand, tømmermand",
+          "jordløs huusmand, er soldat",
+          "jordløs huusmand, fisker",
+          "jordløs huusmand, gaar i dagleje",
+          "jordløs huusmand, hjulmand",
+          "jordløs huusmand, nationalsoldat",
+          "jordløs huusmand, skovf",
+          "jordløs huusmand, smed"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Jordløs Huusmand"
+      },
+      {
+        "from": [
+          "Huusmand med Jord",
+          "huusmand med jord",
+          "husmand med jord",
+          "Husmand med Jord",
+          "Huusmand med Jord, Træskomand",
+          "huusmand med Jord",
+          "Huusmand med Jord, Væver",
+          "huusmand med jord, væver",
+          "Huusmand med Jord samt Skræder",
+          "Huusmand med Jord, Skovf",
+          "Huusmand med Jord Daglejer",
+          "Huusmand med Jord samt Smed",
+          "Huusmand med Jord samt Træskoemand",
+          "Huusmand med Jord samt Væver",
+          "Huusmand med Jord, Daglejer",
+          "Huusmand med Jord, Hiulmand",
+          "Huusmand med Jord, Hjulmand",
+          "Huusmand med Jord, Snedker",
+          "Huusmand med Jord, gaar i Dagleie",
+          "husmand med jord, daglejer",
+          "husmand med jord, væver",
+          "Huusmand med Jord, Smed",
+          "Huusmand med Jord, Tømmermand",
+          "Huusmand med Jord, samt Skræder",
+          "Huusmand med Jordbrug",
+          "husmand med jord, geworben soldat",
+          "huusmand med jord, gaar i dagleje",
+          "huusmand med jord, smed",
+          "Hussmand med Jord",
+          "Huusmand med Jord 1 td Hartk.",
+          "Huusmand med Jord 1 td Hartkorn",
+          "Huusmand med Jord 4 Skp Hartk.",
+          "Huusmand med Jord Hjulmand",
+          "Huusmand med Jord National Soldat",
+          "Huusmand med Jord Skovf",
+          "Huusmand med Jord Skræder",
+          "Huusmand med Jord Smed",
+          "Huusmand med Jord Træskoemager Almisselem",
+          "Huusmand med Jord af Howedgaards Taxt",
+          "Huusmand med Jord af Howedgrd Taxt",
+          "Huusmand med Jord gaar i Dagleje",
+          "Huusmand med Jord giør Træskoe",
+          "Huusmand med Jord men fattig nyder Almisse af S",
+          "Huusmand med Jord men fattige",
+          "Huusmand med Jord samt Horndreier",
+          "Huusmand med Jord samt Lægdsmand",
+          "Huusmand med Jord samt Møller",
+          "Huusmand med Jord samt Pottemager",
+          "Huusmand med Jord samt Skowf",
+          "Huusmand med Jord samt Snedker",
+          "Huusmand med Jord samt Træskomand",
+          "Huusmand med Jord uden Hartkorn",
+          "Huusmand med Jord vanføer",
+          "Huusmand med Jord,",
+          "Huusmand med Jord, Arbeider V",
+          "Huusmand med Jord, Bye Smed",
+          "Huusmand med Jord, Feldbereder",
+          "Huusmand med Jord, Geworben Soldat",
+          "Huusmand med Jord, Glarmester",
+          "Huusmand med Jord, National Soldat",
+          "Huusmand med Jord, Opholdsmand",
+          "Huusmand med Jord, Skoleholder",
+          "Huusmand med Jord, Skræder",
+          "Huusmand med Jord, Træskoemand",
+          "Huusmand med Jord, Træskoemand, Soldat",
+          "Huusmand med Jord, Væver, Land Rytter",
+          "Huusmand med Jord, gaaer i Dagleie",
+          "Huusmand med Jord, lærer Hiulmandsprofession",
+          "Huusmand med Jord, national Soldat",
+          "Huusmand med Jord, samt Bødker",
+          "Huusmand med Jord, samt Hjulmand",
+          "Huusmand med Jord, samt Skomager",
+          "Huusmand med Jord, samt Smed",
+          "Huusmand med Jord, væver",
+          "Huusmand med Jord. Lever af sine Midler",
+          "Huusmand med Jord. S",
+          "husmand med jord, bødker",
+          "husmand med jord, går i dagleje",
+          "husmand med jord, landsoldat",
+          "husmand med jord, møllen udlagt",
+          "husmand med jord, nationalsoldat",
+          "husmand med jord, skomager",
+          "husmand med jord, skovf",
+          "husmand med jord, skrædder",
+          "husmand med jord, smed",
+          "husmand med jord, snedker",
+          "husmand med jord, soldat",
+          "husmand med jord, stenhugger",
+          "huusmand med jord til",
+          "huusmand med jord, degn",
+          "huusmand med jord, drejelsvæver",
+          "huusmand med jord, gartner",
+          "huusmand med jord, hjulmand",
+          "huusmand med jord, skræder",
+          "huusmand med jord, skræder, landsoldat",
+          "huusmand med jord, tømmermand"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Huusmand med Jord"
+      },
+      {
+        "from": [
+          "Huusmand uden Jord",
+          "huusmand uden jord",
+          "husmand uden jord",
+          "Huusmand uden Jord Dag Leier",
+          "Huusmand uden Jord Dagleier",
+          "Huusmand uden Jord gaaer i Dagleje",
+          "Huusmand uden Jord. Daglejer",
+          "Huusmand uden Jord, Daglejer",
+          "Huusmand uden jord",
+          "Husmand uden Jord, Væver",
+          "Huusmand uden Jord Daglejer",
+          "Huusmand uden Jord Smed",
+          "Huusmand uden Jord gaaer i Dag Leie",
+          "Huusmand uden Jord gaaer i Dagleye",
+          "Huusmand uden Jord gaaer i Dagleye,",
+          "Huusmand uden Jord nyder Almisse af S",
+          "Huusmand uden Jord samt Daglejer",
+          "Huusmand uden Jord, Drejelswæver",
+          "Huusmand uden Jord, Glarmester",
+          "Huusmand uden Jord, Rytter",
+          "Huusmand uden Jord, Snedker",
+          "Huusmand uden Jord, Tækkemand",
+          "Huusmand uden Jord, fattig",
+          "Huusmand uden Jord, gaaer i Dagleye",
+          "Huusmand uden Jord, han gaaer i Dagleje",
+          "Huusmand uden Jord, lever af sine Midler",
+          "Huusmand uden Jord, nyder Almisse",
+          "Huusmand uden Jord, træskoarbeider",
+          "Huusmand uden Jord. Dagleier",
+          "husmand uden jord, geworben rytter",
+          "husmand uden jord, går i dagleje",
+          "husmand uden jord, nyder almisse",
+          "husmand uden jord, skomager",
+          "husmand uden jord, skrædder",
+          "husmand uden jord, væver",
+          "huusmand uden jord, daglejer",
+          "huusmand uden jord, gaaer i dagleie"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Huusmand uden Jord"
+      },
+      {
+        "from": [
+          "Underholdes af Gaarden",
+          "Underholdes af Bolet",
+          "Underholdes af Huset",
+          "Underholdes af familien",
+          "underholdes af familien",
+          "Underholdes af Børnene",
+          "Underholdes af Datteren",
+          "Underholdes af Sønnen",
+          "Underholdes af sin Broder",
+          "underholdes af Broderen",
+          "underholdes af Børnene",
+          "underholdes af Mosteren",
+          "underholdes af S",
+          "underholdes af Sønnen",
+          "underholdes af de forrige",
+          "underholdes af familien men forladt af manden",
+          "underholdes af hendes Børn",
+          "underholdes af sønnen",
+          "underholdes efter accordt"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Underholdes af Gaarden/Familien"
+      },
+      {
+        "from": [
+          "ernærer sig ved at spinde",
+          "ernærer sig af at spinde",
+          "ernærer sig ved syning",
+          "ernærer sig af syning",
+          "ernærer sig ved at Spinde",
+          "ernærer sig ved Haandarbeide",
+          "ernærer sig ved synålen",
+          "ernærer sig af Haandarbeide",
+          "ernærer sig af Haandarbejde",
+          "ernærer sig af Pottemagerarbeide",
+          "ernærer sig af andres godhed",
+          "ernærer sig af skomager professionen",
+          "ernærer sig af spinding",
+          "ernærer sig ved Aftægt",
+          "ernærer sig ved bagerprofession",
+          "ernærer sig ved handel",
+          "ernærer sig ved spinding",
+          "ernærer sig ved tømmerhåndværk"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ernærer sig ved håndarbejde"
+      },
+      {
+        "from": [
+          "Gaardbeboer samt Hjulmand",
+          "Gaardbeboer samt S",
+          "Gaardbeboer samt Lægdsmand",
+          "Gaardbeboer, samt S",
+          "Gaardbeboer samt Smed",
+          "Gaardbeboer samt Træskoemand",
+          "Gaardbeboer samt Træskomand",
+          "gaardbeboer samt lægdsmand",
+          "Gaardbeboer samt Drejelsvæver",
+          "Gaardbeboer samt Hiulmand",
+          "Gaardbeboer samt Nat. Soldat",
+          "Gaardbeboer samt National Soldat",
+          "Gaardbeboer samt Soldat",
+          "Gaardbeboer, samt Tilsynsmand wed Howeriet",
+          "gaardbeboer samt s",
+          "gaardbeboer, samt hørhægler",
+          "gaardbeboer, samt rytter",
+          "gaardbeboer, samt s"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Gaardbeboer samt"
+      },
+      {
+        "from": [
+          "Jordløs Huuskone",
+          "Jordløs Huuskone, Spinder",
+          "jordløs huuskone",
+          "Jordløs Huus Kone",
+          "Jordløs Huus-Kone",
+          "Jordløs Huuskoene nyder Almisse af S",
+          "Jordløs Huuskone ernærer sig ved Spinden",
+          "Jordløs Huuskone nyder Almisse",
+          "Jordløs Huuskone som for det meeste væver",
+          "Jordløs Huuskone væver",
+          "Jordløs Huuskone, er Blind",
+          "Jordløs Huuskone, ernærer sig ved Spinden",
+          "Jordløs Huuskone, nyder Almisse af S",
+          "Jordløs Huuskone, som nærer sig af at Sye",
+          "Jordløs Huuskone, som nærer sig meest ved at spinde",
+          "Jordløs Huuskone, syer, spinder",
+          "jordløs Huuskone"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Jordløs Huuskone"
+      },
+      {
+        "from": [
+          "National Soldat",
+          "nationalsoldat",
+          "Nationalsoldat",
+          "national Soldat",
+          "National-Soldat",
+          "nationalsoldat ved 1. Jyske Inf. Reg.",
+          "National Soldat der blot i n",
+          "National Soldat gaar i Dagleje",
+          "National Soldat, Smed Swend",
+          "National Soldat, Snedker Swend",
+          "Nationalsoldat, Huusmand med Jord",
+          "Nationalsoldat, Selvejerhuusmand uden Jord",
+          "Nationalsoldat, Skrædersvend",
+          "national Soldat, Jordløs Huusmand",
+          "national soldat",
+          "nationalsoldat, smed"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "National Soldat"
+      },
+      {
+        "from": [
+          "Inderste nyder Almisse af S",
+          "Inderste nyder Almisse Korn af S",
+          "inderste, nyder almisse af s",
+          "Inderst nyder Almisse af S",
+          "Inderste nyder Almisse",
+          "Inderst, nyder Almisse af S",
+          "Inderste Nyder Almisse Korn af S",
+          "Inderste nyder Ophold",
+          "Inderste underholdes af Sønnen",
+          "Inderste, handler med Uld",
+          "Inderste, nyde Almisse af S",
+          "Inderste, nyder Aftægt",
+          "Inderste, nyder Almisse Korn af S",
+          "Inderste, nyder Almisse af S",
+          "Inderste, nyder lidt Aftægt",
+          "Inderste, understøttes af sine Wenner"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Inderste og nyder almisse"
+      },
+      {
+        "from": [
+          "Eier 4 Skp Hartkorn",
+          "Eier 2 Skp Hartkorn",
+          "Eier 6 Skp Hartkorn",
+          "eier 10 Skp hartkorn",
+          "Eier 12 skp Hartkorn",
+          "Eier 4 Skp Hartkorn, er Smed",
+          "Eier 4 Skp Hartkorn, været Soldat",
+          "Eier 4 skp Hartkorn",
+          "Eier 6 skp Hartkorn",
+          "Eier 7 Skp Hartkorn",
+          "eier 2 Skp Hartkorn",
+          "eier 3 Skp hartkorn",
+          "eier 6 skp hartkorn"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Eier 4 Skp Hartkorn"
+      },
+      {
+        "from": [
+          "Gaardbeboer",
+          "gaardbeboer",
+          "gårdbeboer",
+          "Gaard Beboer",
+          "Gaardbeboere",
+          "Gaard beboer",
+          "Gaardbeboer,",
+          "G[aa]rdbeboer",
+          "Gaardbebeor",
+          "Gaardebeboer",
+          "gaard Beboer",
+          "gaard beboer"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Gaardbeboer"
+      },
+      {
+        "from": [
+          "Bonde, Gaardbeboer",
+          "bonde, gaardbeboer",
+          "bonde, gårdbeboer",
+          "Bonde Gaardbeboer",
+          "Bonde Gaardbeboer, F",
+          "Bonde, Gaardbeboer samt Lægdsmand",
+          "Bonde, Gaardbeboer, Lægdsmand, S",
+          "Bonde, Gaardbeboer, S",
+          "bonde, gaardbeboer, lægdsmand",
+          "bonde, gaardbeboer, lægsmand",
+          "bonde, gaardbeboer, s"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Bonde og Gaardbeboer"
+      },
+      {
+        "from": [
+          "Inderste hwis Mand tiener andensteds",
+          "Inderste som gaaer i Dagleje",
+          "Inderste som nyder Ophold",
+          "Inderste, hwis Mand conditionerer som Børnelærer",
+          "Inderste, hwis Mand er Wægter paa Frijsenborg",
+          "Inderste, hwis Mand tjener i Pøt Mølle",
+          "Inderste, hwis Mand tjener i Randers",
+          "Inderste, som Tjener",
+          "Inderste, som nyder Almisse af S",
+          "Inderste, som nærer sig ved Spind."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Inderste hvis Mand tiener andensteds"
+      },
+      {
+        "from": [
+          "nyder Ophold af Huuset",
+          "nyder Ophold af Stedet",
+          "nyder Ophold af Stædet",
+          "nyder ophold af Stedet",
+          "nyder ophold af s",
+          "nyder ophold af svigersønnen",
+          "nyder Ophold af Sønnen",
+          "nyder ophold af skovf",
+          "nyder ophold af stedet"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "nyder Ophold af Huuset"
+      },
+      {
+        "from": [
+          "Inderste gaaer i Dagleje",
+          "inderste, går i dagleje",
+          "Inderste gaar i Dagleje",
+          "Inderste gaar i Dagleie",
+          "Inderste, gaaer i Dagleie",
+          "Inderste, gaaer i Dagleje",
+          "Inderste, gaaer i Dagleye",
+          "Inderste, gaar i Dagleie, Nationalsoldat",
+          "inderste, går i fast tjeneste"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Inderste i Dagleje"
+      },
+      {
+        "from": [
+          "gaar i Dagleje",
+          "gaaer i Dagleje",
+          "gaaer i dagleje",
+          "går i dagleje",
+          "Gaaer i Dagleje",
+          "gaar i dagleje",
+          "gaaer i Dag Leje",
+          "gaaer i Dag-Leje"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "gaar i Dagleje"
+      },
+      {
+        "from": [
+          "Land Recrut",
+          "Land Rekrut",
+          "Landrecrut",
+          "Landrekrut",
+          "land rekrut",
+          "landrekrut",
+          "Land-Recrut",
+          "landrecrut"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Land Recrut"
+      },
+      {
+        "from": [
+          "nyder Ophold hos Sønnen",
+          "Nyder Ophold hos Sønnen",
+          "nyder Ophold hos Svigersønnen",
+          "nyder Ophold hos sin Sv",
+          "nyder Ophold hos sin Svigersøn",
+          "nyder ophold hos Sviger Sønen",
+          "nyder ophold hos sin Broder",
+          "nyder ophold hos stifsønnen"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "nyder Ophold hos Sønen/Sviger"
+      },
+      {
+        "from": [
+          "gaaer i Dagleie",
+          "gaaer i Dagleye",
+          "gaaer i dagleie",
+          "gaar i Dagleie",
+          "Gaaer i Dagleie",
+          "Gaar i Dagleie",
+          "gaaer i Dag Leie",
+          "gaar i Dagleye"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "gaaer i Dagleje"
+      },
+      {
+        "from": [
+          "Inderste Lever af Aftægt",
+          "Inderste lever af Aftægt",
+          "Inderste Lever af Spind",
+          "Inderste Lever af Ophold eller Aftægt",
+          "Inderste lever af Skriverie",
+          "Inderste lever af sin Formue",
+          "Inderste, Lever af Spinderok",
+          "inderste, lever af at binde"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Inderste Lever af Aftægt"
+      },
+      {
+        "from": [
+          "wed et Jordløs Huus",
+          "Wed et Jordløs Huus",
+          "wed et Jordløs Huus Jordemoder",
+          "wed et Jordløs Huus lewer af at Spinde",
+          "wed et Jordløs Huus underholdes af Manden som tiener",
+          "wed et Jordløs Huus, Soldbinder",
+          "wed et Jordløs Huus, Wæwer",
+          "wed et Jordløs Huus, lever af sine Hænders Gerninger"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "wed et Jordløs Huus"
+      },
+      {
+        "from": [
+          "Indsidder nyder Almisse af S",
+          "Indsidder nyder Almisse Korn af S",
+          "Indsidder, nyder Almisse af S",
+          "Indsidder, nyder aftægt",
+          "Indsidder. Hendes Mand Tjener i Odder Præstegaard",
+          "indsidder, nyder almisse",
+          "indsidder, nyder almisse af s"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Indsidder nyder almisse "
+      },
+      {
+        "from": [
+          "Huuskone uden Jord",
+          "HuusKone uden Jord",
+          "Huuskoene uden Jord",
+          "Huuskone uden Jord ernæres af Sønnen",
+          "Huuskone uden Jord søger at nære sig ved sine Hænders Arbejd",
+          "Huuskone uden Jord. Væverske",
+          "Huuskone uden Jord. tjenende paa Rodsteenseie"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Huuskone uden Jord"
+      },
+      {
+        "from": [
+          "Forvalter ved Godset",
+          "Forvalter ved Frieherskabet Wilhelmsborg",
+          "Forvalter ved Haxholms Gods",
+          "Forvalter ved Rathlousdahl",
+          "Forvalter ved Søebyegaards Gods",
+          "Forvalter ved godset",
+          "forvalter ved godset"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Forvalter ved Godset"
+      },
+      {
+        "from": [
+          "aftægtsmand",
+          "Aftægtsmand",
+          "Aftægts Mand",
+          "Aftegtsmand",
+          "Aftægtsemand",
+          "Aftægtsmand S",
+          "aftægtsmand paa Gaarden"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "aftægtsmand"
+      },
+      {
+        "from": [
+          "Aftægtskone",
+          "aftægtskone",
+          "Aftægts Kone",
+          "AftægtsKone",
+          "AftægtsKone nyder Almisse",
+          "Aftægtskone paa Gaarden",
+          "aftægtskone paa Gaarden"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Aftægtskone"
+      },
+      {
+        "from": [
+          "Opholdsmand",
+          "opholdsmand",
+          "Opholdsmand paa Gaarden",
+          "Opholdsmand i Gaarden",
+          "Opholdsmand i ovenmeldte Gaard",
+          "Opholdsmand nyder Almisse",
+          "opholdsmand ved gården"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Opholdsmand"
+      },
+      {
+        "from": [
+          "Inderste ernæres ved Koenens Hænders Gierning",
+          "Inderste ernæres af Manden som Tiener",
+          "Inderste ernæres af Sønnen",
+          "Inderste. Er nu saa skrøbelig, at Han næsten [*]",
+          "Inderster, nyder Aftægt af Gaarden",
+          "inderste, ernærer sig af håndgerning",
+          "inderste, ernærer sig ved væven"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Lejer uden egen bolig, forsørget af konens håndarbejde"
+      },
+      {
+        "from": [
+          "Inderste hos Gaardbeboeren",
+          "inderste, skrædder",
+          "Inderste, Skindkræmmer",
+          "Inderste, Skræder",
+          "Inderste, syg",
+          "inderste, skomagersvend",
+          "inderste, skrædderpige"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Inderste hos Gaardbeboeren"
+      },
+      {
+        "from": [
+          "faaer Ophold af Gaarden",
+          "Faaer Ophold af Gaarden",
+          "faar Ophold af Gaarden",
+          "Faar Ophold af Gaarden",
+          "Faar Ophold af Gaarden, som de tilforn beboede",
+          "faaer Ophold af Grevskabet",
+          "faaer ophold af Gaarden"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "faaer Ophold af Gaarden"
+      },
+      {
+        "from": [
+          "lever af pension",
+          "Lever af Pension",
+          "Lever af Pension som Præste Enke",
+          "Lever af Pension som Præsteenke",
+          "lever af Pension",
+          "lever af pension af hendes, forhen havde apotek",
+          "lever af pension, majorinde Kaufmann"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "lever af pension"
+      },
+      {
+        "from": [
+          "geworben soldat",
+          "Geworben Soldat",
+          "geworben Soldat",
+          "geworben soldat ved 1. Jyske Inf. Reg.",
+          "Geworben Soldat Huus med Jord",
+          "Geworben Soldat, Huusmand"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Værvet soldat"
+      },
+      {
+        "from": [
+          "fæstehuusmand med jord",
+          "Fæstehuusmand",
+          "Fæstehuusmand med Jord",
+          "Fæstehuusmand uden Jord",
+          "Fæstehuusmand med Jord under Silkeborg Gaard",
+          "Fæstehuusmand med lidet Jord"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "fæstehuusmand med jord"
+      },
+      {
+        "from": [
+          "Enroulleret Matros",
+          "Enrolleret Matros,",
+          "Enroulleret matros",
+          "enroulleret Matros",
+          "enroulleret matros",
+          "inrouleret Matros"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Enroulleret Matros"
+      },
+      {
+        "from": [
+          "Huusjomfrue",
+          "Huus - Jomfrue",
+          "Huus-Jomfrue",
+          "husjomfru",
+          "Husjomfru",
+          "Huus Jomfrue"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Huusjomfrue"
+      },
+      {
+        "from": [
+          "Selvejerbonde",
+          "selvejerbonde",
+          "Selv Ejer bonde",
+          "Selvejerbonde, Gaardbeboer",
+          "selvejer bonde, gaardbeboer, samt heste-",
+          "selvejerbonde, gaardbeboer samt kvæghandler"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Selvejerbonde"
+      },
+      {
+        "from": [
+          "nyder Almisse af S",
+          "Nyder Almisse af S",
+          "nyder almisse af s",
+          "nyder almisse af S",
+          "nyder Almise af S",
+          "nyder almis af S"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "nyder almisse "
+      },
+      {
+        "from": [
+          "beboer et Jordløs Huus",
+          "Beboer et Jordløs huus",
+          "beboer eet jordløs Huus tilhørende Skolen, er Skræder",
+          "beboer et Jordløs Huus, hendes Mand tjener [*]",
+          "beboer et Jordløs Huus, hendes Mand tjener for [*]",
+          "beboer et Jordløs huus"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "beboer et Jordløs Huus"
+      },
+      {
+        "from": [
+          "sadelmager",
+          "Sadelmager",
+          "Saddelmager",
+          "Stoelemager",
+          "Stoelmager",
+          "Stolemager"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "sadelmager"
+      },
+      {
+        "from": [
+          "nyder Ophold af Gaarden",
+          "nyder ophold af gården",
+          "Nyder Ophold af Gaarden",
+          "nyder ophold af Gaarden",
+          "nyder ophold af gaarden",
+          "nyder Ophold af gaarden"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "nyder Ophold af Gaarden"
+      },
+      {
+        "from": [
+          "lever af spinding",
+          "lever af Spinden",
+          "lever af spinderi",
+          "Lever af Spind",
+          "Lever af Spinden",
+          "lever af spinden"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "lever af spinding"
+      },
+      {
+        "from": [
+          "Opholder sig hos Sv",
+          "Opholder sig i Huuset hos hendes Sviger-Forældre",
+          "opholder sig hos Forældrerne",
+          "opholder sig hos Mandens Forældre",
+          "opholder sig hos forældrene",
+          "opholder sig hos svigersønnen"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Opholder sig hos forældre/sviger"
+      },
+      {
+        "from": [
+          "Gevorben Soldat",
+          "gevorben Soldat",
+          "gevorben soldat ved 1. Jyske Inf. Reg.",
+          "Gevorben Soldat fra Aarhuus",
+          "gevorbne soldat ved 1. Jyske Inf. Reg.",
+          "Gevorben Soldat, Tiener på Constantinsborg"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "værvet soldat"
+      },
+      {
+        "from": [
+          "Bonde Gaardmand",
+          "Bonde, Gaardmand",
+          "Bonde, Gaardmand S",
+          "bonde gaardmand",
+          "bonde, gaardmand",
+          "bonde, gaardmand, s"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Bonde og Gaardmand"
+      },
+      {
+        "from": [
+          "Landsoldat",
+          "landsoldat",
+          "Land Soldat",
+          "Land-Soldat",
+          "Land-soldat",
+          "land Soldat"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Landsoldat"
+      },
+      {
+        "from": [
+          "Afskediget Rytter Huusmand",
+          "Afskediget Rytter med Pension",
+          "afskediget Rytter",
+          "afskediget Rytter med Pension",
+          "afskediget rytter",
+          "afskeediget Rytter"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Afskediget Rytter"
+      },
+      {
+        "from": [
+          "Selvejerhuusmand med Jord",
+          "Selv Ejer huusmand med Jord",
+          "Selvejerhuusmand uden Jord",
+          "Selv Ejer huusmand - Smed",
+          "Selvejer Huusmand, hvis Huus er bygget paa",
+          "Selvejerhuusmand med Jord, er Landeværnsmand"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Selvejerhuusmand med Jord"
+      },
+      {
+        "from": [
+          "Skræder",
+          "skrædder",
+          "Skrædder",
+          "skræder",
+          "skourider"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Skræder"
+      },
+      {
+        "from": [
+          "indsidder, skrædder",
+          "Indsidder, skrøbelig",
+          "Indsidderske",
+          "indsidder, skovf",
+          "indsidderske"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "indsidder og skrædder"
+      },
+      {
+        "from": [
+          "jordløs fæstehuusmand",
+          "Jordløs Fæstehuus",
+          "Jordløs Fæstehuusmand",
+          "Jordløs Fæsteh.",
+          "Jordløs Fæstehuus Muurmester"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "jordløs fæstehuusmand"
+      },
+      {
+        "from": [
+          "hospitalslem",
+          "hospitals lem",
+          "Hospitalslem",
+          "Hospitals Lem",
+          "Hospitalslem, vandfør"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "hospitalslem"
+      },
+      {
+        "from": [
+          "selveier gaardmand",
+          "Selveier Gaardmand",
+          "Selv Eier Gaardmand",
+          "Selveier Gaardmand, været Soldat",
+          "selveier gaardmand ved een annexgaard"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "selveier gaardmand"
+      },
+      {
+        "from": [
+          "nyder Hospitals Kost",
+          "nyder Hospitals Hold fra Aarhuus Hospital",
+          "nyder Hospitals hold af Aarhuus Hospital",
+          "nyder hospitalspenge",
+          "nyder hospitalsportion"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "nyder Hospitals Kost"
+      },
+      {
+        "from": [
+          "indsidder, går i dagleje",
+          "Indsidder, gaaer i Dagleie",
+          "Indsidder, gaaer i Dagleje",
+          "indsidder i kromandens hus",
+          "indsidder, gaaer i dagleje"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "indsidder, går i dagleje"
+      },
+      {
+        "from": [
+          "Skolelærer",
+          "skolelærer",
+          "Skole-Lærer",
+          "Skoelelærer",
+          "Skole-Lærere"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Skolelærer"
+      },
+      {
+        "from": [
+          "Inderste",
+          "inderste",
+          "Inderst",
+          "Inderst,",
+          "Inderste,"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Inderste"
+      },
+      {
+        "from": [
+          "nyder Underholdning af Gaarden",
+          "nyder Underholdning af Degnen",
+          "nyder Underholdning hos sin Broder",
+          "nyder underholdning af Børnene",
+          "nyder underholdning hos sin datter"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "nyder Underholdning af Gaarden/familien"
+      },
+      {
+        "from": [
+          "Huusmand med lidet Jord",
+          "Huusmand med lidt Jord",
+          "Huusmand med lit Jord",
+          "Huuusmand med lidt Jord",
+          "huusmand med lidet jord"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Huusmand med lidet Jord"
+      },
+      {
+        "from": [
+          "Skoleholder i Seerup",
+          "Skoleholder, Huusmand med Jord",
+          "Skoleholderske",
+          "skoleholder i Stier Bye",
+          "skoleholder, huusmand med jord"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Skoleholder i Seerup"
+      },
+      {
+        "from": [
+          "handskemager",
+          "handskemagersvend",
+          "Handskemager",
+          "handskemagerenke",
+          "handskemagermester"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "handskemager"
+      },
+      {
+        "from": [
+          "har et Jordløs Huus i Fæste",
+          "Har et Jordløs Huus. Han har Svaghed i det eene Been,",
+          "Har et Jordløs Leie Huus,",
+          "har et Jordløs Huus",
+          "har et Jordløs Huus, er Spindekone"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "har et Jordløs Huus i Fæste"
+      },
+      {
+        "from": [
+          "nyder Ophold hos Datteren",
+          "Nyder Ophold hos Datteren",
+          "nyder ophold hos deres datter",
+          "nyder Ophold hos denne Mand",
+          "nyder ophold hos datteren"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "nyder Ophold hos Datteren"
+      },
+      {
+        "from": [
+          "Træskoemand",
+          "Træskomand",
+          "træskomand",
+          "Træeskoe Mand",
+          "Træskoe Mand"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Træskoemand"
+      },
+      {
+        "from": [
+          "Gaardbeboer, S",
+          "Gaardbeboer S",
+          "Gaardbeboer. S",
+          "gaardbeboer, s",
+          "gårdbeboer, s"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Gaardbeboer"
+      },
+      {
+        "from": [
+          "Indsidder",
+          "indsidder",
+          "Indsider",
+          "Indsiddere",
+          "Endsider"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Indsidder"
+      },
+      {
+        "from": [
+          "Vanvitig nyder Hospitalshold",
+          "Vanvittig nyder Almisse af S",
+          "Vanvittig nyder begge almisse af S",
+          "vanvittig nyder Almisse af S",
+          "vanvittig nyder Ophold i Gaarden"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Vanvitig "
+      },
+      {
+        "from": [
+          "Møller",
+          "møller",
+          "Mahler",
+          "maler",
+          "Maler"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Møller"
+      },
+      {
+        "from": [
+          "tjener Forældrene",
+          "Tjener Forældrene for Kost",
+          "Tjener Forældrene",
+          "tjener Forældrene for Kost",
+          "tjener forældrene"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "tjener hos forældrene"
+      },
+      {
+        "from": [
+          "har hus med jord",
+          "har Huus med Jord",
+          "har huus med jord",
+          "har 1 huus med jord paa præstens mark",
+          "har hus med jord, manden tjener for ladef"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "har hus med jord"
+      },
+      {
+        "from": [
+          "Giordemoder",
+          "Jordemoder",
+          "jordemoder",
+          "giordemoder",
+          "jordmoder"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Jordemoder"
+      },
+      {
+        "from": [
+          "Inderste, vanfør",
+          "Inderste vanfør",
+          "Inderste vanvittig",
+          "Inderste, Vanfør, nyder Almisse af Byen",
+          "inderste, vanvittig"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Inderste"
+      },
+      {
+        "from": [
+          "Inderste faaer Ophold hos Sønnen",
+          "Inderste faaer Hospitals Hold fra Wiborg",
+          "Inderste, Wæverske",
+          "Inderste, forsørges af Manden som tiener andensteds",
+          "inderste, frimand"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Inderste faaer Ophold "
+      },
+      {
+        "from": [
+          "Inderste, Aftægtsmand",
+          "Inderste, Aftægtsmand samt Træskoemand",
+          "Inderste, aftægtskone",
+          "Inderste, aftægtsmand",
+          "Inderste, fattig"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Inderste, Aftægtsmand"
+      },
+      {
+        "from": [
+          "Huusmand uden Hartkorn, giør Træskoe",
+          "Huusmand uden Hartkorn, er Væver",
+          "Huusmand uden Hartkorn, ernærer sig ved Murarbeide",
+          "Huusmand uden Hartkorn, giør V",
+          "Huusmand uden ord"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Huusmand uden Hartkorn, giør Træskoe"
+      },
+      {
+        "from": [
+          "Gaarmand",
+          "Kromand",
+          "Kroemand",
+          "kromand"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Gaardmand, Kromand"
+      },
+      {
+        "from": [
+          "National Rytter",
+          "nationalrytter",
+          "Nationalrytter",
+          "national rytter"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "National Rytter"
+      },
+      {
+        "from": [
+          "smedesvend",
+          "Smeddesvend",
+          "Smedesvend",
+          "Smedsvend"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Smedesvend"
+      },
+      {
+        "from": [
+          "Husmand Væver",
+          "Huusmand, Væver",
+          "Husmand, Væver",
+          "Huusmand Væver"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Husmand Væver"
+      },
+      {
+        "from": [
+          "Vanfør, nyder Almisse",
+          "Vanfør, nyder almisse af S",
+          "[Vanfør, nyder Almisse]",
+          "vanfør, nyder almisse af s"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Vanfør, nyder Almisse"
+      },
+      {
+        "from": [
+          "Dagleier",
+          "Dagleyer",
+          "Dag Leier",
+          "dagleyer"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Daglejer"
+      },
+      {
+        "from": [
+          "Træskoekarl",
+          "Træskokarl",
+          "træskokarl",
+          "Træskoe Karl"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Træskoekarl"
+      },
+      {
+        "from": [
+          "Gaardbeboer, Landeværnsmand",
+          "Gaard Beboer Landsoldat",
+          "Gaardbeboer, Landsoldat",
+          "gårdbeboer, landsoldat"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Gaardbeboer og landsoldat"
+      },
+      {
+        "from": [
+          "Indsidder faaer Aftægt",
+          "Indsidder faaer Almisse",
+          "Indsidder faar Aftægt",
+          "indsidder, forværnt soldat"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Indsidder får Aftægt"
+      },
+      {
+        "from": [
+          "musketer ved 1. Jyske Inf. Reg.",
+          "musqueter ved 1. Jyske Inf. Reg.",
+          "musketeer ved 1. Jyske Inf. Reg.",
+          "musqueteer ved 1. Jyske Inf. Reg."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "musketer ved 1. Jyske Inf. Reg."
+      },
+      {
+        "from": [
+          "Land Rytter",
+          "Land-Rytter",
+          "landrytter",
+          "Landrytter"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Landrytter"
+      },
+      {
+        "from": [
+          "2. lectie hører",
+          "3. lectie hører",
+          "4. lectie hører",
+          "5. lectie hører"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Lectie hører"
+      },
+      {
+        "from": [
+          "Bondekone",
+          "bondekone",
+          "Bonde Kone",
+          "Bindekoene"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Bondekone"
+      },
+      {
+        "from": [
+          "Huusmand",
+          "husmand",
+          "huusmand",
+          "Husmand"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Husmand"
+      },
+      {
+        "from": [
+          "Beboer et Huus med Jord",
+          "beboer eet Huus med Jord",
+          "beboer et Huus med Jord",
+          "beboer et Huus med Jord,"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Beboer med  Huus og Jord"
+      },
+      {
+        "from": [
+          "nyder sit Ophold af Gaarden",
+          "nyder sit Ophold i Gaarden",
+          "nyder sit Ophold af Stedet",
+          "nyder sit Ophold hos Sønnen"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "nyder Ophold af Gaarden"
+      },
+      {
+        "from": [
+          "skoflikker",
+          "Skoeflikker",
+          "skoeflikker",
+          "skoflækker"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "reparere sko"
+      },
+      {
+        "from": [
+          "Wæwer",
+          "er",
+          "er ....",
+          "wæwer"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Væver"
+      },
+      {
+        "from": [
+          "Opsynsmand over Skoven",
+          "Opsynsmand ved Gaardens Mark",
+          "Opsynsmand ved en liden Skov",
+          "opsynsmand ved skoven"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Opsynsmand ved Skoven"
+      },
+      {
+        "from": [
+          "Nærer sig af at spinde",
+          "Nærer sig ved Skrædersyning",
+          "nærer sig ved Spind.",
+          "nærer sig ved Syening"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "spinder"
+      },
+      {
+        "from": [
+          "nærer sig ved Haandgierning",
+          "nærer sig ved Haandarbeide",
+          "Nærer sig ved Haandgierning",
+          "nærer sig ved Haandarbejde"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "nærer sig ved håndarbejde"
+      },
+      {
+        "from": [
+          "har 200 rd pension",
+          "har 40 rd. pension",
+          "har 6 Rd pension",
+          "har 6 rd. pension"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "har rd pension"
+      },
+      {
+        "from": [
+          "Muurmester",
+          "murmester",
+          "Muurmæster",
+          "muurmester"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Muermester"
+      },
+      {
+        "from": [
+          "Selvejer Gaardmand",
+          "Selvejergaardmand",
+          "Selv Ejer gaardmand",
+          "Selvejergaardmand, Landeværnsmand"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Selvejer Gaardmand"
+      },
+      {
+        "from": [
+          "lever af at spinde",
+          "Lever af at Spinde",
+          "lever af at Spinde",
+          "Lever ved Spind"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "spinder"
+      },
+      {
+        "from": [
+          "Huuskone med Jord",
+          "Huuskone, med Jord",
+          "huskone med jord",
+          "huuskone med jord"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Huskone med Jord"
+      },
+      {
+        "from": [
+          "Træskoemand samt Hiulemand",
+          "Træskoemand samt Land Rytter",
+          "Træskoemand samt National Soldat",
+          "Træskoemand, Soldat"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Træskoemand samt Rytter"
+      },
+      {
+        "from": [
+          "Priviligeret Kroemand",
+          "Priviligeret Kroermand",
+          "priviligeret Kroemand",
+          "priviligert kroemand"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Priviligeret Kromand"
+      },
+      {
+        "from": [
+          "Møller Svend",
+          "Møllersvend",
+          "Møllersvænd",
+          "møllersvend"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Møller Svend"
+      },
+      {
+        "from": [
+          "gaardbeboer, udflyttet",
+          "Gaardbeboer, udflyttet",
+          "Gaardbeboer, udflyttet, er Landeværnsmand",
+          "gaardbeboer, udflyt."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "gaardbeboer"
+      },
+      {
+        "from": [
+          "Inderste, tjenestledig, Daglejer",
+          "inderste, tjener",
+          "inderste, tjener, er landsoldat",
+          "inderste, tjenstledig, gaar i dagleje"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Inderste, tjener, Daglejer"
+      },
+      {
+        "from": [
+          "Gaardbeboerske",
+          "Gaard Beboerske",
+          "gaardbeboerske",
+          "gårdbeboer, skoleholder i s"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Gaardbeboer"
+      },
+      {
+        "from": [
+          "Lever af Haandarbeide",
+          "lever af Haand Arbeide",
+          "lever af Haandarbeide",
+          "lever af Haandarbejde"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Lever af Håndarbeide"
+      },
+      {
+        "from": [
+          "Huusmand, gaaer i Dagleie",
+          "Huusmand gaaer i Dagleje",
+          "Huusmand gaar i Dagleje",
+          "huusmand, gaaer i dagleie"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Huusmand, gaaer i Dagleie"
+      },
+      {
+        "from": [
+          "Inderst, hvis Mand tjener",
+          "Inderste, Afskediget Rytter",
+          "Inderste, hvis Mand er NationalSoldat",
+          "Inderste, hvis Mand har fast Tjeneste"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Inderste, Mand tjener"
+      },
+      {
+        "from": [
+          "Afskediget Land Rytter",
+          "Afskediget Leiutenant",
+          "afskediget Livgarder",
+          "afskediget landsoldat"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Afskediget Land Rytter"
+      },
+      {
+        "from": [
+          "afskediget soldat",
+          "Afskediget Soldat, Huusmand med n",
+          "afskediget Sergeant paa Pension",
+          "afskediget Soldat"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "afskediget soldat"
+      },
+      {
+        "from": [
+          "Selv Ejer",
+          "Selvejer",
+          "Selv-Ejer",
+          "selvejer"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Selvejer"
+      },
+      {
+        "from": [
+          "Vanfør",
+          "vanfør",
+          "Vanføer",
+          "vanføer"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Vanfør"
+      },
+      {
+        "from": [
+          "faaer almissekorn af s",
+          "faar Almisse Korn",
+          "faar Almissekorn af S"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "faaer almissekorn"
+      },
+      {
+        "from": [
+          "Stuepige",
+          "stuepige",
+          "Stue Pige"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Stuepige"
+      },
+      {
+        "from": [
+          "NA",
+          "n",
+          "ne"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "NA"
+      },
+      {
+        "from": [
+          "S",
+          "s",
+          "sy-"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "S"
+      },
+      {
+        "from": [
+          "Indsidder National Soldat",
+          "Indsidder, National Soldat",
+          "Indsidder, Nationalsoldat"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Indsidder National Soldat"
+      },
+      {
+        "from": [
+          "Væverdreng",
+          "Væver-Dreng",
+          "væverdreng"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Væverdreng"
+      },
+      {
+        "from": [
+          "Daglejer",
+          "daglejer",
+          "Dag Lejer"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Daglejer"
+      },
+      {
+        "from": [
+          "indsidder, daglejer",
+          "Indsidder Dagleier",
+          "Indsidder - Daglejer"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "indsidder, daglejer"
+      },
+      {
+        "from": [
+          "vanvittig",
+          "Vanvittig",
+          "Vanvitig"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "vanvittig"
+      },
+      {
+        "from": [
+          "Indsidder, som gaaer i Dagleje",
+          "Indsidder som har forladt sin Mand",
+          "Indsidder, som tjener"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Indsidder, dagleje"
+      },
+      {
+        "from": [
+          "Lever af Dagleye",
+          "lever af Dagleie",
+          "lever af dagleie"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Lever af dagleje"
+      },
+      {
+        "from": [
+          "Nat: Soldat",
+          "Nat. Soldat",
+          "Nat.Soldat"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": " Soldat"
+      },
+      {
+        "from": [
+          "Skowf",
+          "Skouf",
+          "skouf"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Skowf"
+      },
+      {
+        "from": [
+          "jordløs selvejerhuusmand",
+          "Jordløs Hus, Lever af gode Folk",
+          "Jordløs Huus Lever af Formue"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "jordløs selvejerhuusmand"
+      },
+      {
+        "from": [
+          "har Ophold af Gaarden",
+          "Har Ophold af Gaarden",
+          "har ophold af gaarden"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": " Ophold på Gaarden"
+      },
+      {
+        "from": [
+          "nepræst",
+          "ne Præst",
+          "ne-Præst"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "præst"
+      },
+      {
+        "from": [
+          "Lever af Aftægt hos Datteren",
+          "Lever af Aftægt hos Sønnen",
+          "Lever af Aftægt hos deres Datter"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Lever af Aftægt af Børn"
+      },
+      {
+        "from": [
+          "Eier af 1 td 4 skp Hartkorn",
+          "Eier af 2 td 4 skp Hartkorn",
+          "eier af 1 tde 5 skp hartkorn"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Eier af td af skp Hartkorn"
+      },
+      {
+        "from": [
+          "Vanfør Inderster",
+          "Vanfør, nyder Hospitalshold",
+          "vanfør, nyder hospitalspenge"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Vanfør og Inderster"
+      },
+      {
+        "from": [
+          "Bødker",
+          "bødker",
+          "Bødkr"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Bødker"
+      },
+      {
+        "from": [
+          "Arbejdsmand paa Gaarden",
+          "Arbejdsmand ved Canalen",
+          "Arbejdsmand ved Gaarden"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Arbejdsmand paa Gaarden"
+      },
+      {
+        "from": [
+          "Lever af sin Pension 200 Rdr",
+          "lever af sin pension",
+          "lever af sine Penge"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Lever af sin Pension "
+      },
+      {
+        "from": [
+          "Selveierhuusmand med Jord",
+          "Selveierhuusmand med Jord, Snedker",
+          "Selveierhuusmand uden Jord"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Selvejerhusmand med Jord"
+      },
+      {
+        "from": [
+          "jordløs huusbeboer",
+          "Jordløs Huus Beboere",
+          "Jordløs Huusbeboer"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "jordløs husbeboer"
+      },
+      {
+        "from": [
+          "lever af sine midler",
+          "Lever af sine Midler",
+          "lever af sine Midler"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "lever af sine midler"
+      },
+      {
+        "from": [
+          "Landvæsens Commissair",
+          "Landvæsens-Commissair",
+          "Landvæsenskommisær"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Landvæsens Commissair"
+      },
+      {
+        "from": [
+          "Gaardbeboer, Lægdsmand",
+          "Gaard Beboer, Lægsmand i S",
+          "Gaardbeboer Lægdsmand"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Gaardbeboer, Lægdsmand"
+      },
+      {
+        "from": [
+          "Gaardmand",
+          "gaardmand",
+          "gårdmand"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Gaardmand"
+      },
+      {
+        "from": [
+          "indsidder, væver",
+          "Indsidder, Væver",
+          "Indsidder, Væver, geworben Soldat"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "indsidder, væver"
+      },
+      {
+        "from": [
+          "lever af almisse",
+          "lever af Almisse",
+          "Lever af Almisse"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "lever af almisse"
+      },
+      {
+        "from": [
+          "Indsidder lever af Aftægt",
+          "Indsidder leve af Aftægt",
+          "indsidder, lever af almisse"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Indsidder lever af Aftægt"
+      },
+      {
+        "from": [
+          "Skoleholder",
+          "skoleholder",
+          "Skoeleholder"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Skoleholder"
+      },
+      {
+        "from": [
+          "Skræderdreng",
+          "Skræder Dreng",
+          "Skræder-Dreng"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Skrædderdreng"
+      },
+      {
+        "from": [
+          "Boer til Leje",
+          "boer til leje",
+          "bor til Leje"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Bor til Leje"
+      },
+      {
+        "from": [
+          "soldat ved regim. i Rendsborg",
+          "soldat ved regimen. i Fredericia",
+          "soldat ved regimentet i Rendsborg"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "soldat ved regim. i Rendsborg"
+      },
+      {
+        "from": [
+          "Huus med Jord",
+          "hus med jord",
+          "huus med jord"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Hus med Jord"
+      },
+      {
+        "from": [
+          "Bondeskræder",
+          "Bonde-Skræderske",
+          "bondeskræder"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Bondeskræder"
+      },
+      {
+        "from": [
+          "Skoemager",
+          "skomager",
+          "Skomager"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Skoemager"
+      },
+      {
+        "from": [
+          "Tømmermand",
+          "tømmermand",
+          "Tømremand"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Tømmer"
+      },
+      {
+        "from": [
+          "blind",
+          "Blind",
+          "Blænd"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "blind"
+      },
+      {
+        "from": [
+          "comandeursergent ved 1. Jyske Inf. Reg.",
+          "comandeersergeant ved 1. Jyske Inf. Reg.",
+          "kommandørsergent ved 1. Jyske Inf. Reg."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "comandeursergent ved 1. Jyske Inf. Reg."
+      },
+      {
+        "from": [
+          "læredreng",
+          "Læredreng",
+          "læredereng"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "læredreng"
+      },
+      {
+        "from": [
+          "Huusmand med 12 skj hartkorn",
+          "Huusmand med 2 skj hartkorn, Snedker",
+          "Huusmand med 5 skj Hartkorn, Væver"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Huusmand med skj hartkorn"
+      },
+      {
+        "from": [
+          "bager",
+          "Bager",
+          "Bøker"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "bager"
+      },
+      {
+        "from": [
+          "Præste Enke",
+          "Præsteenke",
+          "Præsteenke, -"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Præste Enke"
+      },
+      {
+        "from": [
+          "Bonde",
+          "bonde",
+          "binde"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Bonde"
+      },
+      {
+        "from": [
+          "Eier af 10 Skp Hartkorn",
+          "Eier af 2 Skp Hartkorn",
+          "Eier af 6 Skp Hartkorn"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Eier af Skp Hartkorn"
+      },
+      {
+        "from": [
+          "skræddersvend",
+          "Skrædersvend",
+          "skrædersvend"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "skræddersvend"
+      },
+      {
+        "from": [
+          "Fattigf",
+          "Fattig-F",
+          "fattigf"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Fattig"
+      },
+      {
+        "from": [
+          "Skoleholder i Byen med Jord til Græsning",
+          "Skoleholder paa Alrø",
+          "skoleholder i byen"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Skoleholder "
+      },
+      {
+        "from": [
+          "Skoleholder med Jord",
+          "Skoleholder med Græslod",
+          "Skoleholder med Skolejord"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Skoleholder "
+      },
+      {
+        "from": [
+          "Skoleholder for Byen",
+          "Skoleholder for Falling S",
+          "skoleholder ved en kongl. skole"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Skoleholder "
+      },
+      {
+        "from": [
+          "faaer Almisse af S",
+          "Faaer Almisse af S",
+          "faar Almisse af S"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "får Almisse "
+      },
+      {
+        "from": [
+          "skomagersvend",
+          "Skomagersvend",
+          "Skoemagersvend"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "skomagersvend"
+      },
+      {
+        "from": [
+          "Hiulmand",
+          "Hiuulmand",
+          "hiulmand"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Hiulmand"
+      },
+      {
+        "from": [
+          "nyder Aftægt",
+          "nyder aftægt",
+          "Nyder Aftægt"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "nyder Aftægt"
+      },
+      {
+        "from": [
+          "Skoelelærer ved den Kongl: Skoele",
+          "Skolelærer ved den Kongelige Skole i Byen",
+          "Skolelærer ved den Kongl Skoele i Byen"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Skoelelærer ved den Kongl: Skoele"
+      },
+      {
+        "from": [
+          "nærer sig af Haandarbejde",
+          "Nærer sig af Haandarbejde",
+          "nærer sig af Haand Arbejde"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "nærer sig af Haandarbejde"
+      },
+      {
+        "from": [
+          "feldbereder",
+          "Feldbereder",
+          "feldtbereder"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "feldbereder"
+      },
+      {
+        "from": [
+          "Proprietair",
+          "Propritær",
+          "proprietair"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Proprietair"
+      },
+      {
+        "from": [
+          "ed",
+          "ed,",
+          "et"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ed"
+      },
+      {
+        "from": [
+          "Huus",
+          "Hus-",
+          "Huus -"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Hus"
+      },
+      {
+        "from": [
+          "Land-Recrut der med sin Kone opholder sig hos sine",
+          "Landrekrut Dagleyer",
+          "landrekrut til København"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Land-Recrut der med sin Kone opholder sig hos sine"
+      },
+      {
+        "from": [
+          "tærsker",
+          "Tærsker",
+          "Tersker"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "tærsker"
+      },
+      {
+        "from": [
+          "Skriverdreng",
+          "skriverdreng",
+          "Skriver Dreng"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Skriverdreng"
+      },
+      {
+        "from": [
+          "Recrut",
+          "recrut",
+          "Rekryt"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Recrut"
+      },
+      {
+        "from": [
+          "Rygter",
+          "røgter",
+          "Røgter"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Rygter"
+      },
+      {
+        "from": [
+          "Gørtler",
+          "gørtler",
+          "Giørtler"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Gørtler"
+      },
+      {
+        "from": [
+          "Nyder Ophold",
+          "nyder ophold",
+          "nyder Ophold"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Nyder Ophold"
+      },
+      {
+        "from": [
+          "urmager",
+          "Uhrmager",
+          "uhrmager"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "urmager"
+      },
+      {
+        "from": [
+          "lægdsmand, bonde",
+          "Lægdsmand Bonde",
+          "Lægdsmand, Bonde"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "lægdsmand, bonde"
+      },
+      {
+        "from": [
+          "Opholder sig paa Gaarden",
+          "opholder sig på akademiet i Kbhn.",
+          "opholder sig på akademiet i København"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Opholder sig paa Gaarden"
+      },
+      {
+        "from": [
+          "Skrøbelig",
+          "Skrøbelig,",
+          "skrøbelig"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Skrøbelig"
+      },
+      {
+        "from": [
+          "Snedker",
+          "snedker",
+          "[Snedker]"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Snedker"
+      },
+      {
+        "from": [
+          "Huusmand til Leje",
+          "Huusmand til Leje gaaer i Dagleje",
+          "Huusmand til leie"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Huusmand til Leje"
+      },
+      {
+        "from": [
+          "Til Ophold",
+          "til ophold",
+          "Til ophold"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Ophold"
+      },
+      {
+        "from": [
+          "Opholdskone",
+          "opholdskone",
+          "Opholds Kone"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Opholdskone"
+      },
+      {
+        "from": [
+          "avlsmand",
+          "Avlsmand",
+          "opholsmand"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "avismand"
+      },
+      {
+        "from": [
+          "Rebslager",
+          "Reebslager",
+          "rebslager"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Rebslager"
+      },
+      {
+        "from": [
+          "skovf",
+          "Skovf",
+          "Skov-F"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "skov"
+      },
+      {
+        "from": [
+          "Faar frie Ophold i Gaarden",
+          "Faaer fri Ophold i Gaarden",
+          "Faar fri Ophold i Gaarden"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Ophold på Gaarden"
+      },
+      {
+        "from": [
+          "tobaksspinder",
+          "tobaksspinderske",
+          "tobaksspindersvend"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "tobaksspinder"
+      },
+      {
+        "from": [
+          "consumptionsbetjent",
+          "Consumptionsbetjent",
+          "Consumptions forvalter"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "consumptionsbetjent"
+      },
+      {
+        "from": [
+          "Faaer fri Ophold af Gaarden",
+          "Faar fri Ophold af Gaarden",
+          "Faar fri Ophold af Møllen"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": " Ophold på Gaarden"
+      },
+      {
+        "from": [
+          "nyder Almisse",
+          "nyder almisse",
+          "Nyder Almisse"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "nyder Almisse"
+      },
+      {
+        "from": [
+          "Smededreng",
+          "Smede Dreng",
+          "smededreng"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Smededreng"
+      },
+      {
+        "from": [
+          "nyder Almisse Korn af S",
+          "nyder almissekorn af s",
+          "nyder almissekorn"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "nyder Almisse af Korn"
+      },
+      {
+        "from": [
+          "Jordløs Huus",
+          "jordløs huus",
+          "jordløs Huus"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Jordløs Huus"
+      },
+      {
+        "from": [
+          "købmand",
+          "Kiøbmand",
+          "Købmand"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "købmand"
+      },
+      {
+        "from": [
+          "Skovrider",
+          "Skovridder",
+          "skovridder"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Skovridder"
+      },
+      {
+        "from": [
+          "nedegn",
+          "ne Degn",
+          "ne-Degn"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "nedegn"
+      },
+      {
+        "from": [
+          "Landeværnsmand",
+          "Landeværnsmand, handler med Uld",
+          "landeværnsmand"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Landeværnsmand"
+      },
+      {
+        "from": [
+          "Almisselem",
+          "Almisse Lem",
+          "almisselem"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Almisselem"
+      },
+      {
+        "from": [
+          "Inderste, Nationalsoldat",
+          "Inderste, national Soldat",
+          "inderste, nationalsoldat"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Inderste, Nationalsoldat"
+      },
+      {
+        "from": [
+          "Inderste, nærer sig wed Qwindegierning",
+          "Inderste, nærer sig wed Qwindegjerning",
+          "Inderste nærer sig wed Qwindegierning"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Inderste, nærer sig wed Qwindegierning"
+      },
+      {
+        "from": [
+          "Huusholderske",
+          "husholderske",
+          "huusholderske"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Husholderske"
+      },
+      {
+        "from": [
+          "skriverkarl",
+          "Skriverkarl",
+          "Skriver Karl"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "skriverkarl"
+      },
+      {
+        "from": [
+          "eier huus med jord til",
+          "eier 1 huus med jord til",
+          "eier 1 huus med jord"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Ejer huus med jord til"
+      },
+      {
+        "from": [
+          "",
+          "??"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": ""
+      },
+      {
+        "from": [
+          "Indsidder opholdes af hendes Datter",
+          "Indsider, Blind nyder Almisse af S"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Indsidder opholdes af hendes Datter"
+      },
+      {
+        "from": [
+          "Konen væver",
+          "Konen Væver"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Konen væver"
+      },
+      {
+        "from": [
+          "Artillerist",
+          "artillerist"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Artillerist"
+      },
+      {
+        "from": [
+          "Gaardbruger",
+          "gårdbruger"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Gaardlejer"
+      },
+      {
+        "from": [
+          "iae",
+          "iæ"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "iae"
+      },
+      {
+        "from": [
+          "v",
+          "Fæe"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "v"
+      },
+      {
+        "from": [
+          "gaae [*]",
+          "gaae i [*]"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "gaae [*]"
+      },
+      {
+        "from": [
+          "værtshusmand",
+          "Værtshusmand, Gæstgiver"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "værtshusmand"
+      },
+      {
+        "from": [
+          "discipel i skolen",
+          "disipel i skolen"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "elev i skolen"
+      },
+      {
+        "from": [
+          "Bestyrer Gaarden",
+          "bestyrer gården"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "styrer gaarden"
+      },
+      {
+        "from": [
+          "Indsidder Tømmermand",
+          "indsidder, tømmermand"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Indsidder "
+      },
+      {
+        "from": [
+          "Indsidder tjener som Tærsker",
+          "Indsidder tjener uden S"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Indsidder "
+      },
+      {
+        "from": [
+          "Forvalter",
+          "forvalter"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Forvalter"
+      },
+      {
+        "from": [
+          "Fuldmægtig",
+          "fuldmægtig"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Fuldmægtig"
+      },
+      {
+        "from": [
+          "rytter ved Slesvigsk Rytterregiment",
+          "rytter ved slesvigske rytter Reg."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "rytter ved Slesvigsk Rytterregiment"
+      },
+      {
+        "from": [
+          "Indsidder ernæres af Sønnen",
+          "Indsidder, har ingen næringsvej"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Indsidder ernæres af Sønnen"
+      },
+      {
+        "from": [
+          "Lægdsmand",
+          "lægdsmand"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Lægdsmand"
+      },
+      {
+        "from": [
+          "boer i et jordløs huus",
+          "bor i et jordløst hus, spinder"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "bor i hus uden jord til"
+      },
+      {
+        "from": [
+          "sykone",
+          "Syekone"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "sykone"
+      },
+      {
+        "from": [
+          "Skytte",
+          "skytte"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Skytte"
+      },
+      {
+        "from": [
+          "glarmester",
+          "Glarmester"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "glarmester"
+      },
+      {
+        "from": [
+          "Smed",
+          "smed"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Smed"
+      },
+      {
+        "from": [
+          "Fattig",
+          "fattig"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Fattig"
+      },
+      {
+        "from": [
+          "fattige",
+          "Fattige"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Fattig"
+      },
+      {
+        "from": [
+          "Husbeboer uden Jord",
+          "Huusbeboer uden Jord"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Husbeboer uden Jord"
+      },
+      {
+        "from": [
+          "Dagleyer i et Jordløs Huus",
+          "Dagleier i et Jordløs Huus"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Daglejer i et Jordløs Huus"
+      },
+      {
+        "from": [
+          "Huusbeboer uden Hartkorn",
+          "Huusbeboer uden Hartkorn, giør Træskoe"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Huusbeboer uden Hartkorn"
+      },
+      {
+        "from": [
+          "fuldmægtig ved amtscomptoiret",
+          "fuldmægtig ved told-"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "fuldmægtig ved amtscomptoiret"
+      },
+      {
+        "from": [
+          "udepige",
+          "Udpige"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "udepige"
+      },
+      {
+        "from": [
+          "Sye Pige",
+          "Syepige"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Syerske"
+      },
+      {
+        "from": [
+          "Material Kudsk",
+          "Materialkudsk"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Material Kudsk"
+      },
+      {
+        "from": [
+          "hattemager",
+          "Hattemager"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "hattemager"
+      },
+      {
+        "from": [
+          "Wed et Huus med Jord",
+          "ed i et Huus med Jord"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Wed et Huus med Jord"
+      },
+      {
+        "from": [
+          "gevorben Rytter",
+          "Gevorben Rytter"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "vævet Rytter"
+      },
+      {
+        "from": [
+          "prokurator",
+          "Procurator"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "prokurator"
+      },
+      {
+        "from": [
+          "Lægsmand",
+          "lægsmand"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Lægsmand"
+      },
+      {
+        "from": [
+          "Vævepige",
+          "Vævpige"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Vævepige"
+      },
+      {
+        "from": [
+          "spindekone i jordløs huus",
+          "spindekone i jordløs hus"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "spindekone i jordløs huus"
+      },
+      {
+        "from": [
+          "betler",
+          "Betler"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "betler"
+      },
+      {
+        "from": [
+          "Nyder Aftægt af Gaarden",
+          "nyder Aftægt af Gaarden"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Nyder Aftægt af Gaarden"
+      },
+      {
+        "from": [
+          "Nat. Rytter",
+          "Nat: Rytter"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "National Rytter"
+      },
+      {
+        "from": [
+          "Soldat",
+          "soldat"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Soldat"
+      },
+      {
+        "from": [
+          "soldat ved 1. Jyske Inf. Reg.",
+          "soldat ved 2. Jyske Inf. Reg."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "soldat ved 1. Jyske Inf. Reg."
+      },
+      {
+        "from": [
+          "Fisker",
+          "fisker"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Fisker"
+      },
+      {
+        "from": [
+          "snedkerdreng",
+          "Snedkerdreng"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Snedkerdreng"
+      },
+      {
+        "from": [
+          "Væversvend",
+          "væversvend"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Væversvend"
+      },
+      {
+        "from": [
+          "Parcellist fra en udstycket gaard",
+          "Parcellist fra en udstykket Gaard"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Parcellist fra en udstycket gaard"
+      },
+      {
+        "from": [
+          "Jordløs Huus Spinder",
+          "Jordløs Huus, Spindekone, fattig, Manden tjener ude"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Jordløs Huus Spinder"
+      },
+      {
+        "from": [
+          "Kammerherre, -",
+          "kammerherre"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Kammerherre, -"
+      },
+      {
+        "from": [
+          "selveier ved 1. annexgaard",
+          "selveier ved annexgaarden"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "selveier ved 1. annexgaard"
+      },
+      {
+        "from": [
+          "almisse",
+          "Almisse"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Almisse"
+      },
+      {
+        "from": [
+          "nyder pension af geheimeråds(inde) Desmecieres enke",
+          "nyder pension af kaldet"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "nyder af pension "
+      },
+      {
+        "from": [
+          "syr for folk",
+          "syer for folk"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "syerske"
+      },
+      {
+        "from": [
+          "Selveierbonde",
+          "Selv Eierbonde"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Selvejerbonde"
+      },
+      {
+        "from": [
+          "farer til søs",
+          "farer til Søes"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "farer til søs"
+      },
+      {
+        "from": [
+          "Indsidder, hvis Mand tjener for avlskarl paa Kiærgaard",
+          "Indsidder, hvis mand tjener for avlskarl i Præstegaarden"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Indsidder"
+      },
+      {
+        "from": [
+          "nyder Hospitalshold",
+          "nyder hospitalshold"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Hospitalshold"
+      },
+      {
+        "from": [
+          "Gaardbeboer, handler med Heste",
+          "gaardbeboerinde"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Gaardbeboer"
+      },
+      {
+        "from": [
+          "Gaardbeboer National Soldat",
+          "Gaardbeboer, Nationalsoldat"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Gaardbeboer National Soldat"
+      },
+      {
+        "from": [
+          "Husmand Smed",
+          "Huusmand, Smed for Byen"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Husmand Smed"
+      },
+      {
+        "from": [
+          "tjener sin Broder",
+          "Tjener sin Brodersøn"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "tjener hos sin broder"
+      },
+      {
+        "from": [
+          "Husmand Snedker",
+          "huusmand, snedker"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Husmand og Snedker"
+      },
+      {
+        "from": [
+          "Fæstebonde",
+          "fæstebonde"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Fæstebonde"
+      },
+      {
+        "from": [
+          "Skoele Holder",
+          "Skole Holder"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Skoleholder"
+      },
+      {
+        "from": [
+          "soldat ved samme regiment",
+          "soldat ved sammen regiment"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "soldat ved regiment"
+      },
+      {
+        "from": [
+          "huusmandsenke uden jord",
+          "HuusmandsEnke med Jord"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "husmandsenke uden jord"
+      },
+      {
+        "from": [
+          "Karetmager",
+          "karetmager"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Karetmager"
+      },
+      {
+        "from": [
+          "Udflytter",
+          "Udfløtter"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Udflytter"
+      },
+      {
+        "from": [
+          "underofficer ved 1. Jyske Inf. Reg.",
+          "underofficer ved samme regiment"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "underofficer ved 1. Jyske Inf. Reg."
+      },
+      {
+        "from": [
+          "musketer ved samme regiment",
+          "musqueter ved samme regiment"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "soldat ved samme regiment"
+      },
+      {
+        "from": [
+          "gårdskarl",
+          "Gaardskarl"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "gårdkarl"
+      },
+      {
+        "from": [
+          "tjener",
+          "Tjener"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "tjener"
+      },
+      {
+        "from": [
+          "garver",
+          "Garver"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "garver"
+      },
+      {
+        "from": [
+          "Opdrages af Arvemidler",
+          "Opdrages frit"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Arvemidler"
+      },
+      {
+        "from": [
+          "Aftægtsfolk",
+          "Aftægtsfolk, Inderste"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Aftægtsfolk"
+      },
+      {
+        "from": [
+          "tjener moderen",
+          "tjener Moderen"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "tjener hos moderen"
+      },
+      {
+        "from": [
+          "taabelig",
+          "tåbelig"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Dum"
+      },
+      {
+        "from": [
+          "går med bagerkurven",
+          "går med bagerkurv"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "går med bagerkurven"
+      },
+      {
+        "from": [
+          "Opholdes af Sønnen",
+          "opholdes af sønnen"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Opholdes af Sønnen"
+      },
+      {
+        "from": [
+          "Enroulleret",
+          "enrolleret"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Enroulleret"
+      },
+      {
+        "from": [
+          "Reserve Soldat",
+          "Reserve-Soldat"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Reserve Soldat"
+      },
+      {
+        "from": [
+          "guldsmed",
+          "Guldsmed"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "guldsmed"
+      },
+      {
+        "from": [
+          "tiener",
+          "Tiener"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "tjener"
+      },
+      {
+        "from": [
+          "knapmager",
+          "Knapmager"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "knappemager"
+      },
+      {
+        "from": [
+          "har en Gaard i fæste",
+          "har en Gaard i Fæste"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": " Gaard i fæste"
+      },
+      {
+        "from": [
+          "ernærer sig med at sy",
+          "ernærer sig med spinderi"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "syerske"
+      },
+      {
+        "from": [
+          "et Jord",
+          "et Jord."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "et Jord"
+      },
+      {
+        "from": [
+          "tjener faderen",
+          "tjener Faderen"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "tjener hos faderen"
+      },
+      {
+        "from": [
+          "Huusmand med n",
+          "Huusmand med indkiøbt Jord"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Husmand "
+      },
+      {
+        "from": [
+          "Pottemager",
+          "pottemager"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Pottemager"
+      },
+      {
+        "from": [
+          "Geworben Rytter",
+          "geworben rytter"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "vævet Rytter"
+      },
+      {
+        "from": [
+          "Dreier",
+          "Dreyer"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Drejer"
+      },
+      {
+        "from": [
+          "grovsmed",
+          "Grovsmed"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "smed"
+      },
+      {
+        "from": [
+          "Opholdes hos Svigersønnen",
+          "opholdes hos Svigersønnen"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Opholdes hos Svigersønnen"
+      },
+      {
+        "from": [
+          "Amtsforvalter",
+          "amtsforvalter"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Amtsforvalter"
+      },
+      {
+        "from": [
+          "avlskarl",
+          "Avlskarl"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "avlskarl"
+      },
+      {
+        "from": [
+          "Krøbling",
+          "krøbling"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Krøbling"
+      },
+      {
+        "from": [
+          "Gaard Eier",
+          "Garder"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Gårdejer"
+      },
+      {
+        "from": [
+          "Vægter",
+          "vægter"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Vægter"
+      },
+      {
+        "from": [
+          "Pensionist",
+          "pensionist"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Pensionist"
+      },
+      {
+        "from": [
+          "kobbersmedesvend",
+          "kobbersmedsvend"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "kobbersmedesvend"
+      },
+      {
+        "from": [
+          "nyder fri huusværelse ved stedet",
+          "nyder frie huusværelse"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "nyder fri huusværelse "
+      },
+      {
+        "from": [
+          "Hjulmand",
+          "hjulmand"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Hjulmand"
+      },
+      {
+        "from": [
+          "tjener som dreng",
+          "tjener husmoderen"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "tjener som dreng"
+      },
+      {
+        "from": [
+          "skorstensfejermester",
+          "skorstensfejersvend"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "skorstensfejer"
+      },
+      {
+        "from": [
+          "Han gaaer i Dagleje",
+          "Han gaar i Dagleje"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "gåer i Dagleje"
+      },
+      {
+        "from": [
+          "Arbejder ved Canalen",
+          "Arbejder ved Gaarden"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Arbejder ved Canalen"
+      },
+      {
+        "from": [
+          "Skoleholder wed den Kongelige Skoele",
+          "skoleholder i den kongelige skole i Sielle"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Skoleholder "
+      },
+      {
+        "from": [
+          "Skoleholder Enke",
+          "Skoleholder Enke Almisselem"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Skoleholder Enke"
+      },
+      {
+        "from": [
+          "baademand",
+          "podemand"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "bådemand"
+      },
+      {
+        "from": [
+          "Gevorben",
+          "gevorben"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Gevorben"
+      },
+      {
+        "from": [
+          "Tienestekarl",
+          "Tieneste Karl"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Tjenestekarl"
+      },
+      {
+        "from": [
+          "Bondeenke",
+          "bondeenke"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Bonde enke"
+      },
+      {
+        "from": [
+          "udflyttet Selvejerhuusmand med Jord",
+          "udflyttet Selvejerhuusmand med Jord, Landeværnsmand"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "udflyttet Selvejerhuusmand med Jord"
+      },
+      {
+        "from": [
+          "boer til Leie",
+          "Boer til Leie"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "boer til leje"
+      },
+      {
+        "from": [
+          "Pastor Emeritus med 120 Rd Pension",
+          "Pastor emeritus"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Pastor Emeritus "
+      },
+      {
+        "from": [
+          "Natmand",
+          "natmand"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Natmand"
+      },
+      {
+        "from": [
+          "lærer at væve",
+          "lærer at Væve"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "væver"
+      },
+      {
+        "from": [
+          "Forpagter paa Silkeborg Mølle",
+          "Forpagter paa Wosnesgaard"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Forpagter paa Silkeborg Mølle"
+      },
+      {
+        "from": [
+          "Quæghandler",
+          "quæghandler"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Quæghandler"
+      },
+      {
+        "from": [
+          "nyde Ophold af Gaarden",
+          "Nyde Ophold af Gaarden"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Ophold på Gaarden"
+      },
+      {
+        "from": [
+          "Skolelærer for S",
+          "Skolelærer for en del af Laasbys Ungdom"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Skolelærer"
+      },
+      {
+        "from": [
+          "Student",
+          "student"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Student"
+      },
+      {
+        "from": [
+          "Ladef",
+          "ladef"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Lade"
+      },
+      {
+        "from": [
+          "har Aftægt",
+          "har aftægt"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Aftægt"
+      },
+      {
+        "from": [
+          "Huusmand, har Jord",
+          "husmand har jord"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Huusmand med Jord"
+      },
+      {
+        "from": [
+          "Podmester",
+          "podemester"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Podmester"
+      },
+      {
+        "from": [
+          "skriver",
+          "Skriver"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "skriver"
+      },
+      {
+        "from": [
+          "snedkersvend",
+          "Snedkersvend"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "snedkersvend"
+      },
+      {
+        "from": [
+          "amme",
+          "Amme"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "amme"
+      },
+      {
+        "from": [
+          "Faarehyrde",
+          "fårehyrde"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Faarehyrde"
+      },
+      {
+        "from": [
+          "Tømmersvænd",
+          "tømmersvend"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Tømmersvend"
+      },
+      {
+        "from": [
+          "Annexbonde",
+          "annexbonde"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Annexbonde"
+      },
+      {
+        "from": [
+          "tjenestekarl",
+          "Tjenestekarl"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "tjenestekarl"
+      },
+      {
+        "from": [
+          "Hyrde",
+          "hyrde"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Hyrde"
+      },
+      {
+        "from": [
+          "Steenhugger",
+          "stenhugger"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Steenhugger"
+      },
+      {
+        "from": [
+          "ernæres af Sønnen",
+          "ernæres af sønnen"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ernæres af Sønnen"
+      },
+      {
+        "from": [
+          "Forpagter",
+          "forpagter"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Forpagter"
+      },
+      {
+        "from": [
+          "Spillemand",
+          "Spilmand"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Spillemand"
+      },
+      {
+        "from": [
+          "Faar Ophold i Gaarden",
+          "Faaer Ophold i Gaarden"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Ophold på Gaarden"
+      },
+      {
+        "from": [
+          "er Spindekone",
+          "er spindekone"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": " Spinder"
+      },
+      {
+        "from": [
+          "ed Gaardbeboer",
+          "ed, Gaardbeboer"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Gaardbeboer"
+      },
+      {
+        "from": [
+          "Barnepige",
+          "barnepige"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Barnepige"
+      },
+      {
+        "from": [
+          "nyder Almisse af Horsens Hospital",
+          "nyder Almisse fra Randers Hospital"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "nyder Almisse af  Hospital"
+      },
+      {
+        "from": [
+          "lever ved understøt. af familien",
+          "lever ved understøttelse af familien"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "lever ved understøt. af familien"
+      },
+      {
+        "from": [
+          "Sneker",
+          "Snæker"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Snedker"
+      },
+      {
+        "from": [
+          "Møller med Jord",
+          "Møller med Jordbrug"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Møller med Jord"
+      },
+      {
+        "from": [
+          "kom.serg. ved 1. Jyske Inf. Reg.",
+          "komm. serg. ved 1. Jyske Inf. Reg."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "kom.serg. ved 1. Jyske Inf. Reg."
+      },
+      {
+        "from": [
+          "nærer sig ved at spinde for Folk",
+          "nærer sig ved at væve"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "spinder"
+      },
+      {
+        "from": [
+          "pottemagersvend",
+          "Pottemagersvend samt National Soldat"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "pottemagersvend"
+      },
+      {
+        "from": [
+          "Nærer sig af Skræder-Haandvark",
+          "Nærer sig af Skræder-Haandværk"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Nærer sig af Skrædder"
+      },
+      {
+        "from": [
+          "er Bødker",
+          "er bødker"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Bødker"
+      },
+      {
+        "from": [
+          "Gaardbesidderske",
+          "Gaardbesiderske"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Gaardbesidder"
+      },
+      {
+        "from": [
+          "wanfør",
+          "Wanfør"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "vanfør"
+      },
+      {
+        "from": [
+          "handelsmand",
+          "Handelsmand"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "handelsmand"
+      },
+      {
+        "from": [
+          "net",
+          "net,"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "net"
+      },
+      {
+        "from": [
+          "Markmand",
+          "markmand"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Markmand"
+      },
+      {
+        "from": [
+          "skolelære",
+          "Skolelære"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "skolelære"
+      },
+      {
+        "from": [
+          "er Soldat",
+          "er soldat"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Soldat"
+      },
+      {
+        "from": [
+          "skibstømrer",
+          "skibstømrersvend"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "skibstømrer"
+      },
+      {
+        "from": [
+          "er Snedker",
+          "er snedker"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Snedker"
+      },
+      {
+        "from": [
+          "Kalkslager",
+          "kalkslager"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Kalkslager"
+      },
+      {
+        "from": [
+          "Gartner",
+          "gartner"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Gartner"
+      },
+      {
+        "from": [
+          "Skræderske",
+          "skræderske"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Skrædder"
+      },
+      {
+        "from": [
+          "sygelig",
+          "Swagelig"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "svag"
+      },
+      {
+        "from": [
+          "nyder ophold af datteren",
+          "nyder ophold ved Stedet"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "nyder ophold hos datteren"
+      },
+      {
+        "from": [
+          "nyder ophold af en fraflyttet bondegård",
+          "nyder Ophold af en forhen havt Gaard"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "nyder ophold af en fraflyttet bondegård"
+      },
+      {
+        "from": [
+          "Antagen til Opdragelse",
+          "antagen til opdragelse"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Antaget til Opdragelse"
+      },
+      {
+        "from": [
+          "tømrer",
+          "Tømrer"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "tømrer"
+      },
+      {
+        "from": [
+          "syer",
+          "syr"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "syerske"
+      },
+      {
+        "from": [
+          "Dum",
+          "dum"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Dum"
+      },
+      {
+        "from": [
+          "Degn",
+          "degn"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Degn"
+      },
+      {
+        "from": [
+          "Grøftgraver",
+          "grøftegraver"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Grøftgraver"
+      },
+      {
+        "from": [
+          "Opholdende",
+          "opholdende"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Opholdende"
+      },
+      {
+        "from": [
+          "tjenestepige",
+          "Tjenestepige"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "tjenestepige"
+      },
+      {
+        "from": [
+          "hartkornseier",
+          "hartkornseier, været soldat"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "hartkornseier"
+      },
+      {
+        "from": [
+          "Gaardbeoer",
+          "Gaardboer"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Gaardbeboer"
+      },
+      {
+        "from": [
+          "Udtient Soldat",
+          "udtient Soldat, Fisker om Sommeren"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Udtjent Soldat"
+      },
+      {
+        "from": [
+          "Smed, Huusmand med Jord",
+          "smed, huusmand med jord"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Smed"
+      },
+      {
+        "from": [
+          "geworben landsoldat",
+          "Geworben Landsoldat"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "geworben landsoldat"
+      },
+      {
+        "from": [
+          "Steenkløver",
+          "Stenkløver"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Steenkløver"
+      },
+      {
+        "from": [
+          "feldberedersvend",
+          "Feldberederske"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "feldberedersvend"
+      },
+      {
+        "from": [
+          "Land Artillerist",
+          "Lande Artillerist"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Land Artillerist"
+      },
+      {
+        "from": [
+          "Candedatus Theol",
+          "Candidatus Theol"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Candedatus Theol"
+      },
+      {
+        "from": [
+          "Kokkepige",
+          "kokkepige"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Kokkepige"
+      },
+      {
+        "from": [
+          "svend",
+          "Svend"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "svend"
+      },
+      {
+        "from": [
+          "Huuskone",
+          "huuskone"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Huskone"
+      },
+      {
+        "from": [
+          "Byens Hyrde",
+          "byens hyrde"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Hyrde"
+      },
+      {
+        "from": [
+          "slagter",
+          "Slagter"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "slagter"
+      },
+      {
+        "from": [
+          "Skræderpige",
+          "skrædderpige"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Skrædder"
+      },
+      {
+        "from": [
+          "Etatsraadinde",
+          "etatsrådinde, lever af sine midler"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Etatsraadinde"
+      },
+      {
+        "from": [
+          "nealmisse",
+          "ne Almisse"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Almisse"
+      },
+      {
+        "from": [
+          "Har et Slag",
+          "har et Slag"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Svag"
+      },
+      {
+        "from": [
+          "nyder Ophold i Gaarden",
+          "Nyder Ophold i Gaarden"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "nyder Ophold på Gaarden"
+      },
+      {
+        "from": [
+          "Byens Smed",
+          "byens smed"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Smed"
+      },
+      {
+        "from": [
+          "comp.feldsk. ved 1. Jyske Inf. Reg.",
+          "komp. feldsk. ved 1. Jyske Inf. Reg."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "comp.feldsk. ved 1. Jyske Inf. Reg."
+      },
+      {
+        "from": [
+          "Land Soldat Dag Leier",
+          "Landsoldat tjener for Løn"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Land Soldat "
+      },
+      {
+        "from": [
+          "landsoldat, huusmand uden jord",
+          "Landsoldat samt Huusmand uden Jord"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "landsoldat"
+      },
+      {
+        "from": [
+          "er Daglejer",
+          "er daglejer"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Daglejer"
+      },
+      {
+        "from": [
+          "fæstegaardbeboer",
+          "Fæstegaardbeboer"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "fæstegaardbonde"
+      },
+      {
+        "from": [
+          "Inderste, har Aftægt",
+          "Inderster, have Ophold hos Datteren"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Inderste"
+      },
+      {
+        "from": [
+          "Hyrde i Byen",
+          "hyrde i byen"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Hyrde"
+      },
+      {
+        "from": [
+          "concumptions betjent",
+          "concumptionsbetjent"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "concumptions betjent"
+      },
+      {
+        "from": [
+          "Spindepige",
+          "spindepige"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Spinder"
+      },
+      {
+        "from": [
+          "Inderste Spinder",
+          "inderste, spinder"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Inderste Spinder"
+      },
+      {
+        "from": [
+          "Trykker",
+          "trykker"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Trykker"
+      },
+      {
+        "from": [
+          "Inderste, Blind",
+          "inderste, blind, almisselem"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Blind"
+      },
+      {
+        "from": [
+          "drejer",
+          "Drejer"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Drejer"
+      },
+      {
+        "from": [
+          "er skræder",
+          "er Skræder"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Skrædder"
+      },
+      {
+        "from": [
+          "Iordløs Huusmand",
+          "iordløs Huusmand"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "jordløs husmand"
+      },
+      {
+        "from": [
+          "bestandig Sengeliggende",
+          "bestandig sengeliggende"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Sengeliggende"
+      },
+      {
+        "from": [
+          "har et huus med jord",
+          "Har et Huus med Jord. Baade Mand"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Husejer med jord"
+      },
+      {
+        "from": [
+          "dreng",
+          "Dreng"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Dreng"
+      },
+      {
+        "from": [
+          "Lever af S",
+          "lever af S"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Almisse"
+      },
+      {
+        "from": [
+          "Informator",
+          "informator"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Informator"
+      },
+      {
+        "from": [
+          "Gjør Træskoe",
+          "gjør Træskoe"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Gjør Træskoe"
+      },
+      {
+        "from": [
+          "er Smed",
+          "er smed"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Smed"
+      },
+      {
+        "from": [
+          "Inderste Dagleier",
+          "Inderste, Dagleier"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Inderste Dagleier"
+      },
+      {
+        "from": [
+          "Binder",
+          "binder"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Binder"
+      },
+      {
+        "from": [
+          "Inderste der ellers er udi fast Tieneste",
+          "Inderste, Træskomand"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Inderste "
+      },
+      {
+        "from": [
+          "understøttes af familien",
+          "understøttes af Sønnen"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "understøttes af familien"
+      },
+      {
+        "from": [
+          "nyde almisse af s",
+          "nyde Almisse Af S"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Nyde almisse"
+      },
+      {
+        "from": [
+          "Væver i Jordløs Huus",
+          "væver, jordløs huusmand"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Væver "
+      },
+      {
+        "from": [
+          "nepræst for Sielle, Schiørring",
+          "nepræst for Stoering, Stier"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "nepræst for Sielle, Schiørring"
+      },
+      {
+        "from": [
+          "Hyrde, beboer et Jordløs Huus",
+          "Hyrde, beboer et Jordløs Huus, er Landeværnsmand"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Hyrde"
+      },
+      {
+        "from": [
+          "haver lidet Jord",
+          "haver lidet Jord til Huuset"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "haver lidet Jord"
+      },
+      {
+        "from": [
+          "Tjener Huusbonden eller Faderen",
+          "tjener husbonden"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Tjener Huusbonden eller Faderen"
+      },
+      {
+        "from": [
+          "Rygter paa Gersdorffslund",
+          "Rygter paa Gersdorfslund"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Rygter paa Gersdorffslund"
+      },
+      {
+        "from": [
+          "Lever af Aftægt",
+          "lever af Aftægt"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Lever af Aftægt"
+      },
+      {
+        "from": [
+          "er Hiulmand",
+          "er hiulmand"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Hjulmand"
+      },
+      {
+        "from": [
+          "Pensioneist fra Aakiær",
+          "Pensionist fra Aakiær"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Pensionist"
+      },
+      {
+        "from": [
+          "Boelsmand",
+          "boelsmand"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Boelsmand"
+      },
+      {
+        "from": [
+          "skolediscipel",
+          "skoledisciple"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "skolediscipel"
+      },
+      {
+        "from": [
+          "skærsliber",
+          "Skierslipper"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "skærsliber"
+      },
+      {
+        "from": [
+          "Underholdes begge af Gaard",
+          "Underholdes begge af Gaard, Sengeliggende"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Underholdes på Gård"
+      },
+      {
+        "from": [
+          "Kudsk",
+          "kudsk"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Kudsk"
+      },
+      {
+        "from": [
+          "Farer fra Horsens",
+          "farer fra Horsens"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Farer fra Horsens"
+      },
+      {
+        "from": [
+          "Gartnerdreng",
+          "Gartnerdræng"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Gartnerdreng"
+      },
+      {
+        "from": [
+          "landsoldat ved 1. Jyske Inf. Reg.",
+          "landsoldat ved regm. i Rendsborg"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "landsoldat ved 1. Jyske Inf. Reg."
+      },
+      {
+        "from": [
+          "Spinderske",
+          "spinderske"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Spinder"
+      },
+      {
+        "from": [
+          "Stampe Møller",
+          "Stampemøller"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Stampe Møller"
+      },
+      {
+        "from": [
+          "Rytter",
+          "rytter"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Rytter"
+      },
+      {
+        "from": [
+          "Hestehandler",
+          "hestehandler"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Hestehandler"
+      },
+      {
+        "from": [
+          "Gjordemoder",
+          "Gjordmoder"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Jordmoder"
+      },
+      {
+        "from": [
+          "er væver",
+          "er Væver"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "væver"
+      },
+      {
+        "from": [
+          "skipper",
+          "Skipper"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "skipper"
+      },
+      {
+        "from": [
+          "ed i S",
+          "et Huus"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ed"
+      },
+      {
+        "from": [
+          "Væverske",
+          "væverske"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "væver"
+      },
+      {
+        "from": [
+          "er Pottemager",
+          "er pottemager"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Pottemager"
+      },
+      {
+        "from": [
+          "Træskohugger",
+          "træskohugger"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Træskohugger"
+      },
+      {
+        "from": [
+          "farver",
+          "Farver"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Farver"
+      },
+      {
+        "from": [
+          "Capitain",
+          "kaptajn"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Capitain"
+      },
+      {
+        "from": [
+          "Byesmed",
+          "Bysmed"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Smed"
+      },
+      {
+        "from": [
+          "fendrik ved 1. Jyske Inf. Reg.",
+          "fændrik ved 1. Jyske Inf. Reg."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "fendrik ved 1. Jyske Inf. Reg."
+      },
+      {
+        "from": [
+          "Væverpige",
+          "væverpige"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Væver"
+      },
+      {
+        "from": [
+          "lever af familiens understøttelse",
+          "lever af familiens understøtt."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "lever af familiens understøttelse"
+      },
+      {
+        "from": [
+          "Afskediget Commender Sergeant. Har Ophold paa Gaarden",
+          "Afskediget Kgl. Skovf"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Afskediget Commender Sergeant. Har Ophold paa Gaarden"
+      },
+      {
+        "from": [
+          "afskediget major med 500 Rd ventepenge",
+          "afskediget major med pension"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "afskediget major med 500 Rd ventepenge"
+      },
+      {
+        "from": [
+          "Qvæghandler",
+          "kvæghandler"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Qvæghandler"
+      },
+      {
+        "from": [
+          "Eier 1 Jordløs Huus",
+          "er jordløs husmand"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Jordløs husmand"
+      },
+      {
+        "from": [
+          "Amtmand",
+          "amtmand"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Amtmand"
+      },
+      {
+        "from": [
+          "spinder",
+          "Spinder"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "spinder"
+      },
+      {
+        "from": [
+          "Væver",
+          "væver"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "væver"
+      },
+      {
+        "from": [
+          "Stuekone",
+          "stuekone"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Stuekone"
+      },
+      {
+        "from": [
+          "spindekone",
+          "Spindekone"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "spinder"
+      },
+      {
+        "from": [
+          "Inderste Lewer af Aftægt",
+          "Inderste, Lewer af Aftægt"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Inderste Lewer af Aftægt"
+      },
+      {
+        "from": [
+          "Eier 1 tønde Hartkorn, er Soldat",
+          "eier 1 tønde hartkorn"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Eier 1 tønde Hartkorn, er Soldat"
+      },
+      {
+        "from": [
+          "Selv Eier Møller",
+          "Selveier Møller"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Selv Eier Møller"
+      },
+      {
+        "from": [
+          "er Blind",
+          "er blind"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Blind"
+      },
+      {
+        "from": [
+          "Jordbruger",
+          "jordbruger"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Jordbruger"
+      },
+      {
+        "from": [
+          "Nyder af de Fattiges Penge",
+          "nyder af de Fattiges Penge"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Almisse"
+      },
+      {
+        "from": [
+          "Inderste, Manden i fast Tieneste",
+          "inderste, manden er bortrømt"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Inderste, Manden i fast Tieneste"
+      }
+    ],
+    "description": "Mass edit cells in column Erhverv_rensen"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Erhverv_rensen",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Jordløs Huusmand",
+          "Jordløs husmand",
+          "jordløs husmand"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Jordløs Huusmand"
+      },
+      {
+        "from": [
+          "gaar i Dagleje",
+          "gaaer i Dagleje",
+          "gåer i Dagleje"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Går i Dagleje"
+      },
+      {
+        "from": [
+          "Landsoldat",
+          "landsoldat",
+          "Land Soldat "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Landsoldat"
+      },
+      {
+        "from": [
+          "spinder",
+          "Spinder",
+          " Spinder"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Spinder"
+      },
+      {
+        "from": [
+          "væver",
+          "Væver",
+          "Væver "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Væver"
+      },
+      {
+        "from": [
+          "Skræder",
+          "Skrædder"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Skrædder"
+      },
+      {
+        "from": [
+          "svag",
+          "Svag"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "svag"
+      },
+      {
+        "from": [
+          "indsidder, daglejer",
+          "Indsidder, dagleje"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "indsidder"
+      },
+      {
+        "from": [
+          "vanvittig",
+          "Vanvitig "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "vanvittig"
+      },
+      {
+        "from": [
+          "skov",
+          "Skowf"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Skov"
+      },
+      {
+        "from": [
+          "Smed",
+          "smed"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Smed"
+      },
+      {
+        "from": [
+          "værvet soldat",
+          "Værvet soldat"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "værvet soldat"
+      },
+      {
+        "from": [
+          "Soldat",
+          " Soldat"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Soldat"
+      },
+      {
+        "from": [
+          "Skoleholder",
+          "Skoleholder "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Skoleholder"
+      },
+      {
+        "from": [
+          "Bor til Leje",
+          "boer til leje"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Bor til Leje"
+      },
+      {
+        "from": [
+          "soldat ved regiment",
+          "soldat ved regim. i Rendsborg"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "soldat ved regiment"
+      },
+      {
+        "from": [
+          "Inderste",
+          "Inderste "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Inderste"
+      },
+      {
+        "from": [
+          "blind",
+          "Blind"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "blind"
+      },
+      {
+        "from": [
+          "Husmand",
+          "Husmand "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Husmand"
+      },
+      {
+        "from": [
+          "tjener hos moderen",
+          "tjener som dreng"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "tjener hos moderen/dreng"
+      },
+      {
+        "from": [
+          "Gaardbeboer",
+          "gaardbeboer"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Gaardbeboer"
+      },
+      {
+        "from": [
+          "Tjenestekarl",
+          "tjenestekarl"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Tjenestekarl"
+      },
+      {
+        "from": [
+          "syerske",
+          "Syerske"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Syerske"
+      },
+      {
+        "from": [
+          "nyder Ophold hos Datteren",
+          "nyder ophold hos datteren"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Nyder Ophold hos Datteren"
+      },
+      {
+        "from": [
+          "Gårdejer",
+          "Gaard Ejer"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Gårdejer"
+      },
+      {
+        "from": [
+          "Indsidder",
+          "Indsidder "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Indsidder"
+      },
+      {
+        "from": [
+          "Inderste i Dagleje",
+          "Inderste Dagleier"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Inderste i Dagleje"
+      },
+      {
+        "from": [
+          "Jordemoder",
+          "Jordmoder"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Jordemoder"
+      },
+      {
+        "from": [
+          "nyder almisse ",
+          "nyder Almisse"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Nyder almisse "
+      },
+      {
+        "from": [
+          "får Almisse ",
+          "faaer Almisse"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Nyder almisse "
+      },
+      {
+        "from": [
+          "Husejer med jord",
+          "Huusejer med Jord"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Husejer med jord"
+      },
+      {
+        "from": [
+          "Vanfør",
+          "vanfør"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Vanfør"
+      },
+      {
+        "from": [
+          "Selvejerhuusmand med Jord",
+          "Selvejerhusmand med Jord"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Selvejerhuusmand med Jord"
+      },
+      {
+        "from": [
+          "Inderste, Mand tjener",
+          "Inderste, Manden i fast Tieneste"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Inderste, Mand tjener"
+      }
+    ],
+    "description": "Mass edit cells in column Erhverv_rensen"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Erhverv_rensen",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Indsidder",
+          "indsidder"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Indsidder"
+      }
+    ],
+    "description": "Mass edit cells in column Erhverv_rensen"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Erhverv_rensen",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Ophold på Gaarden",
+          " Ophold på Gaarden"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Ophold på Gaarden"
+      },
+      {
+        "from": [
+          "Indsidder Almisselem",
+          "almisselem, indsidder"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Indsidder "
+      },
+      {
+        "from": [
+          "Gaardmand Lægdsmand",
+          "Lægdsmand Gaardmand"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Gaardmand Lægdsmand"
+      },
+      {
+        "from": [
+          "almisselem, vanvittig",
+          "vanvittig Almisselem"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "almisselem, vanvittig"
+      },
+      {
+        "from": [
+          "giør Træskoe",
+          "[giør Træskoe]"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "giør Træskoe"
+      },
+      {
+        "from": [
+          "indsidder, landsoldat",
+          "landsoldat, indsidder"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "indsidder, landsoldat"
+      }
+    ],
+    "description": "Mass edit cells in column Erhverv_rensen"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Erhverv_rensen",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Indsidder",
+          "Indsidder "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Indsidder"
+      }
+    ],
+    "description": "Mass edit cells in column Erhverv_rensen"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Erhverv_rensen",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "le Uger tersker"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "NA"
+      }
+    ],
+    "description": "Mass edit cells in column Erhverv_rensen"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Erhverv_rensen",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Jordløs Huusmand",
+          "Jorløs Huusmand",
+          "Jodløs Huusmand",
+          "Jordlød Huusmand",
+          "Jorsløs Huusmand"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Jordløs Huusmand"
+      },
+      {
+        "from": [
+          "Jordløs Huusmand",
+          "Jorløs Huusmand",
+          "Jodløs Huusmand",
+          "Jorsløs Huusmand"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Jordløs Huusmand"
+      },
+      {
+        "from": [
+          "Huusmand med Jord",
+          "Huusand med Jord",
+          "Huusmand ned Jord"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Huusmand med Jord"
+      },
+      {
+        "from": [
+          "Jordløs Huusmand",
+          "Jorløs Huusmand",
+          "Jodløs Huusmand"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Jordløs Huusmand"
+      },
+      {
+        "from": [
+          "consumptionsbetjent",
+          "consumtionsbetjent",
+          "comsumptionsbetjent"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "consumptionsbetjent"
+      },
+      {
+        "from": [
+          "Jordløs Huusmand",
+          "Jorløs Huusmand",
+          "Jorsløs Huusmand"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Jordløs Huusmand"
+      },
+      {
+        "from": [
+          "Lever af Aftægt",
+          "Leve af Aftægt",
+          "Lewer af Aftægt"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Lever af Aftægt"
+      },
+      {
+        "from": [
+          "Inderste Lever af Aftægt",
+          "Inderste Lewer af Aftægt"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Inderste"
+      },
+      {
+        "from": [
+          "krambodskarl",
+          "kambodskarl"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "krambodskarl"
+      },
+      {
+        "from": [
+          "værvet soldat",
+          "været Soldat"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "værvet soldat"
+      },
+      {
+        "from": [
+          "Jordløs Huusmand",
+          "Jordlød Huusmand"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Jordløs Huusmand"
+      },
+      {
+        "from": [
+          "consumptionsbetjent",
+          "consumtionsbetjent"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "consumptionsbetjent"
+      },
+      {
+        "from": [
+          "Quæghandler",
+          "Qvæghandler"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Quæghandler"
+      },
+      {
+        "from": [
+          "Indsidder",
+          "insidder"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Indsidder"
+      },
+      {
+        "from": [
+          "eier af 1 tønde hartkorn",
+          "Eier af 1 tønde Harthorn"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "eier af 1 tønde hartkorn"
+      },
+      {
+        "from": [
+          "skriverkarl",
+          "Skriwerkarl"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "skriverkarl"
+      },
+      {
+        "from": [
+          "tiener Bonden",
+          "tjener bonden"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Bonde"
+      },
+      {
+        "from": [
+          "Skolelærer",
+          "skolelære"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Skolelærer"
+      },
+      {
+        "from": [
+          "Hijulmand uden Jord",
+          "Hjulmand uden Jord"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Hijulmand uden Jord"
+      },
+      {
+        "from": [
+          "Vævepige",
+          "Wævepige"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Væver"
+      },
+      {
+        "from": [
+          "krambodsdreng",
+          "kambodsdreng"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "krambodsdreng"
+      },
+      {
+        "from": [
+          "snedkersvend",
+          "Snedkerswend"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "snedkersvend"
+      },
+      {
+        "from": [
+          "Huusmand med Jord",
+          "Huusand med Jord"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Huusmand med Jord"
+      },
+      {
+        "from": [
+          "hoboist ved 1. Jyske Inf. Reg.",
+          "hobonist ved 1. Jyske Inf. Reg."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "hoboist ved 1. Jyske Inf. Reg."
+      },
+      {
+        "from": [
+          "selveier gaardmand",
+          "Selvejer Gaardmand"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "selvejerr gaardmand"
+      },
+      {
+        "from": [
+          "Kalkslager",
+          "Kalkslaaer"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Kalkslager"
+      },
+      {
+        "from": [
+          "tjener broderen",
+          "tiener Broderen"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "tjener hos broderen"
+      },
+      {
+        "from": [
+          "Skoemager",
+          "Skoemagger"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Skoemager"
+      },
+      {
+        "from": [
+          "indsidder, går i dagleje",
+          "insidder, går i dagleje"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "indsidder"
+      },
+      {
+        "from": [
+          "Væver uden Jord",
+          "Væwer uden Jord"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Væver uden Jord"
+      },
+      {
+        "from": [
+          "Muermester",
+          "murermester"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Muremester"
+      },
+      {
+        "from": [
+          "Lever af Aftægt",
+          "Lewer af Aftægt"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Lever af Aftægt"
+      },
+      {
+        "from": [
+          "er Hyrde",
+          "er Hyrden"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Hyrde"
+      },
+      {
+        "from": [
+          "farversvend",
+          "garversvend"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "farversvend"
+      },
+      {
+        "from": [
+          "Tømmersvend",
+          "tømrersvend"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Tømmersvend"
+      },
+      {
+        "from": [
+          "Gaardbeboer",
+          "Gaarbeboer"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Gaardbeboer"
+      },
+      {
+        "from": [
+          "Huusmand med Jord",
+          "Huusmand ned Jord"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Huusmand med Jord"
+      },
+      {
+        "from": [
+          "Hiulmand",
+          "Hjulmand"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Hjulmand"
+      },
+      {
+        "from": [
+          "Gaardbeboer",
+          "Gaardbrboer"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Gaardbeboer"
+      },
+      {
+        "from": [
+          "fendrik ved 1. Jyske Inf. Reg.",
+          "fenrik ved 1. Jyske Inf. Reg."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "fendrik ved 1. Jyske Inf. Reg."
+      },
+      {
+        "from": [
+          "gjørtler",
+          "Gørtler"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "gjørtler"
+      },
+      {
+        "from": [
+          "Daglejer",
+          "Dagleje"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Daglejer"
+      },
+      {
+        "from": [
+          "Almisselem",
+          "Akmisselem"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Almisselem"
+      },
+      {
+        "from": [
+          "Gartner ved Gaarden",
+          "Gartner wed Gaarden"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Gartner ved Gaarden"
+      },
+      {
+        "from": [
+          "går med bagerkurven",
+          "går med bagekurven"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "går med bagerkurven"
+      },
+      {
+        "from": [
+          "tjener som pige",
+          "tjener som pigen"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "tjener som pige"
+      },
+      {
+        "from": [
+          "spindemester",
+          "spindermester"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "spindemester"
+      },
+      {
+        "from": [
+          "vanvittig",
+          "Vanvittige"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "vanvittig"
+      },
+      {
+        "from": [
+          "Inderste",
+          "Inderster"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Inderste"
+      },
+      {
+        "from": [
+          "Lever af Aftægt",
+          "Leve af Aftægt"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Lever af Aftægt"
+      },
+      {
+        "from": [
+          "giør Træskoe",
+          "Gjør Træskoe"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "giør Træskoe"
+      },
+      {
+        "from": [
+          "Selveierboelsmand",
+          "Selvejerboelsmand"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Selveierboelsmand"
+      },
+      {
+        "from": [
+          "Bryggerpige",
+          "bryggerspige"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Bryggerpige"
+      },
+      {
+        "from": [
+          "consumptionsbetjent",
+          "comsumptionsbetjent"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "consumptionsbetjent"
+      },
+      {
+        "from": [
+          "Forstermoder",
+          "Fostermoder"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Forstermoder"
+      },
+      {
+        "from": [
+          "Pensionist",
+          "pesionist"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Pensionist"
+      },
+      {
+        "from": [
+          "Tienestepige",
+          "tjenestepige"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Tienestepige"
+      },
+      {
+        "from": [
+          "Have Ophold af Gaarden",
+          "haver Ophold af Gaarden"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Have Ophold af Gaarden"
+      }
+    ],
+    "description": "Mass edit cells in column Erhverv_rensen"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Erhverv_rensen",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Indsidder",
+          "indsidder"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Indsidder"
+      }
+    ],
+    "description": "Mass edit cells in column Erhverv_rensen"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Erhverv_rensen",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Bonde"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Bonde og Gaardbeboer"
+      }
+    ],
+    "description": "Mass edit cells in column Erhverv_rensen"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "Erhverv_rensen",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Syerske",
+          "Syerske "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Syerske"
+      },
+      {
+        "from": [
+          "præst",
+          "Præst"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "præst"
+      }
+    ],
+    "description": "Mass edit cells in column Erhverv_rensen"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "Erhverv_rensen",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Jordløs Huusmand",
+          "Jordløs Husmand"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Jordløs Husmand"
+      },
+      {
+        "from": [
+          "Jordløs Hsuskone",
+          "Jordløs Hus, Skræderske"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Jordløs Huskone"
+      }
+    ],
+    "description": "Mass edit cells in column Erhverv_rensen"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "Erhverv_rensen",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Jordløs Huuskone",
+          "Jordløs Huskone"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Jordløs Huuskone"
+      }
+    ],
+    "description": "Mass edit cells in column Erhverv_rensen"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "Erhverv_rensen",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Jordløs Husmand",
+          "Jordløshusmand"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Jordløs Husmand"
+      }
+    ],
+    "description": "Mass edit cells in column Erhverv_rensen"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "Erhverv_rensen",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Almisselem",
+          "Almisse Lem i S"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Almisselem"
+      }
+    ],
+    "description": "Mass edit cells in column Erhverv_rensen"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "Erhverv_rensen",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "S",
+          "",
+          "v",
+          "b",
+          "L"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Sognepræst"
+      }
+    ],
+    "description": "Mass edit cells in column Erhverv_rensen"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "Erhverv_rensen",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Huusmand med Jord",
+          "Husmand med Jord"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Husmand med Jord"
+      }
+    ],
+    "description": "Mass edit cells in column Erhverv_rensen"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "Erhverv_rensen",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Husmand med Jord",
+          "Husmand med jord"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Husmand med jord"
+      },
+      {
+        "from": [
+          "NA",
+          "Na"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "NA"
+      }
+    ],
+    "description": "Mass edit cells in column Erhverv_rensen"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "Erhverv_rensen",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Huuskone uden Jord",
+          "Huskone uden jord"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Huskone uden jord"
+      },
+      {
+        "from": [
+          "Ejer huus med jord til",
+          "Ejer hus med jord"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Ejer hus med jord til"
+      },
+      {
+        "from": [
+          "Huusmand uden Jord",
+          "Husmand uden jord"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Husmand uden Jord"
+      }
+    ],
+    "description": "Mass edit cells in column Erhverv_rensen"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "Erhverv_rensen",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Pottemager",
+          "hattemager",
+          "Pustemager"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Pottemager"
+      },
+      {
+        "from": [
+          "Møller Svend",
+          "Møllerswend"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Møllersvend"
+      },
+      {
+        "from": [
+          "Lægsmand",
+          "Lægsmand S"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Lægsmand"
+      },
+      {
+        "from": [
+          "lever af pension",
+          "lever af pangsion"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Lever af pension"
+      },
+      {
+        "from": [
+          "nyder Ophold af Gaarden",
+          "nyder Ophold på Gaarden"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Nyder ophold af gaarden"
+      },
+      {
+        "from": [
+          "Skrøbelig",
+          "Skrøbelige,"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Skrøbelig"
+      },
+      {
+        "from": [
+          "Tienestedræng",
+          "tjenestedreng"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Tjenestedreng"
+      },
+      {
+        "from": [
+          "Inderste",
+          "Binderske"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Inderste"
+      },
+      {
+        "from": [
+          "Svagelig",
+          "Swagelige"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Svagelig"
+      },
+      {
+        "from": [
+          "Nyder almisse ",
+          "Nyde almisse"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Nyder almisse "
+      },
+      {
+        "from": [
+          "ernærer sig ved håndarbejde",
+          "nærer sig ved håndarbejde"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Ernærer sig ved håndarbejde"
+      },
+      {
+        "from": [
+          "ed med Jord",
+          "n  med Jord"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Husmand med jord"
+      },
+      {
+        "from": [
+          "consumptionsbetjent",
+          "concumptions betjent"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "consumptionsbetjent"
+      },
+      {
+        "from": [
+          "Pottemager",
+          "hattemager"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Pottemager"
+      },
+      {
+        "from": [
+          "købmandskarl",
+          "købmandskab"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "købmandskarl"
+      },
+      {
+        "from": [
+          "tjener som karl",
+          "tjener for karl"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Tjenerkarl"
+      },
+      {
+        "from": [
+          "Forvalter ved Godset",
+          "Forwalter wed Godset"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Forvalter"
+      },
+      {
+        "from": [
+          "pottemagersvend",
+          "hattemagersvend"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "pottemagersvend"
+      },
+      {
+        "from": [
+          "Dreilsvæver",
+          "drejelsvæver"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Dreilsvæver"
+      },
+      {
+        "from": [
+          "tjener som pige",
+          "tjener for pige"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Tjenestepige"
+      },
+      {
+        "from": [
+          "barber",
+          "barberer"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "barber"
+      },
+      {
+        "from": [
+          "National Soldat",
+          "nation: Soldat"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Soldat"
+      },
+      {
+        "from": [
+          "Tømmer",
+          "n Tømmer"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Tømmer"
+      },
+      {
+        "from": [
+          "apoteksdreng",
+          "apotekerdreng"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "apoteksdreng"
+      }
+    ],
+    "description": "Mass edit cells in column Erhverv_rensen"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "Erhverv_rensen",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Tienestepige",
+          "Tjenestepige"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Tjenestepige"
+      },
+      {
+        "from": [
+          "haver Jord",
+          "har Jord"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Husmand med jord"
+      }
+    ],
+    "description": "Mass edit cells in column Erhverv_rensen"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "Erhverv_rensen",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Eier 4 Skp Hartkorn",
+          "Eier af Skp Hartkorn"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Eier 4 Skp Hartkorn"
+      }
+    ],
+    "description": "Mass edit cells in column Erhverv_rensen"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "Erhverv_rensen",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Inderste",
+          "husinderste",
+          "er Inderste",
+          "net, Inderste"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Inderste"
+      },
+      {
+        "from": [
+          "Lever af pension",
+          "Lever af sin Pension ",
+          "lever af en pension"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Lever af pension"
+      },
+      {
+        "from": [
+          "Gaardmand",
+          "Gaardmand, S",
+          "ed Gaardmand"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Gaardmand"
+      },
+      {
+        "from": [
+          "Konen væver",
+          "Konen Væverske",
+          "Konen er Væverske"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Konen væver"
+      },
+      {
+        "from": [
+          "har et Huus uden Jord",
+          "har et Leiehuus uden Jord",
+          "har Leiehuus uden Jord"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Ejer hus uden jord"
+      },
+      {
+        "from": [
+          "Opholdsfolk paa Gaarden",
+          "Opholdsfolk i Gaarden",
+          "Opholdskone paa Gaarden"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Opholdsfolk paa Gaarden"
+      },
+      {
+        "from": [
+          "tjener hos forældrene",
+          "tjenende hos forældrene",
+          "tjener Morforældrene"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Tjener ved familien"
+      },
+      {
+        "from": [
+          "Almisselem",
+          "Almisse",
+          "Almisselemmer"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Almisselem"
+      },
+      {
+        "from": [
+          "Inderste",
+          "husinderste",
+          "er Inderste"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Inderste"
+      },
+      {
+        "from": [
+          "wed et Jordløs Huus",
+          "beboer et Jordløs Huus",
+          "Ejer et Jordløs Huus"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ejer hus uden jord"
+      },
+      {
+        "from": [
+          "har et Huus uden Jord",
+          "har Huus uden jord",
+          "har Leiehuus uden Jord"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Ejer hus uden jord"
+      },
+      {
+        "from": [
+          "wed et Jordløs Huus",
+          "Ejer et Jordløs Huus",
+          "i et Jordløs Huus"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Ejer hus uden jord "
+      },
+      {
+        "from": [
+          "Opholdsfolk paa Gaarden",
+          "Opholdsfolk i Gaarden"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Opholdsfolk paa Gaarden"
+      },
+      {
+        "from": [
+          "Almisselem",
+          "Almisselemmer"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Almisselem"
+      },
+      {
+        "from": [
+          "skræddersvend",
+          "Skrædderdreng"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Skrædder"
+      },
+      {
+        "from": [
+          "er Inderste",
+          "net, Inderste"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Inderste"
+      },
+      {
+        "from": [
+          "Gartner",
+          "er Gartner"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Gartner"
+      },
+      {
+        "from": [
+          "Lever af sin Pension ",
+          "lever af en pension"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Lever af sin Pension "
+      },
+      {
+        "from": [
+          "har et Huus uden Jord",
+          "har Huus uden jord"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Ejer hus uden jord"
+      },
+      {
+        "from": [
+          "lever af familiens understøttelse",
+          "lever ved familiens understøttelse"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "lever af familiens understøttelse"
+      },
+      {
+        "from": [
+          "har et Jordløs Huus i Fæste",
+          "Har Jordløs Huus i Fæste"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Jordløshus i fæste"
+      },
+      {
+        "from": [
+          "Tækkemand",
+          "er tækkemand"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Tækkemand"
+      },
+      {
+        "from": [
+          "Fattig",
+          "Fattiglem"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Fattig"
+      },
+      {
+        "from": [
+          "Væver uden Jord",
+          "Væver med Jord"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Væver"
+      },
+      {
+        "from": [
+          "Møllersvend",
+          "er Møllersvend"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Møllersvend"
+      },
+      {
+        "from": [
+          "Soldat",
+          "N. Soldat"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Soldat"
+      },
+      {
+        "from": [
+          "wed et Jordløs Huus",
+          "i et Jordløs Huus"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Ejer hus uden jord"
+      },
+      {
+        "from": [
+          "Opholdskone",
+          "er opholdskone"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Opholdskone"
+      },
+      {
+        "from": [
+          "Opholdsfolk i Gaarden",
+          "Opholdskone i Gaarden"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Opholdsfolk på Gaarden"
+      },
+      {
+        "from": [
+          "Selvejer",
+          "Selvejerske"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Selvejer"
+      },
+      {
+        "from": [
+          "Husmand Hjulmand",
+          "Huusmand, Hiulmand"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Husmand"
+      },
+      {
+        "from": [
+          "uægte barn",
+          "Et uægte barn"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "uægte barn"
+      },
+      {
+        "from": [
+          "Tjenestepige",
+          "tjenesteløse"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Tjenestepige"
+      },
+      {
+        "from": [
+          "Faarehyrde",
+          "Fæehyrde"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Faarehyrde"
+      },
+      {
+        "from": [
+          "Krøbling",
+          "nu krøbling"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Krøbling"
+      },
+      {
+        "from": [
+          "beboer et Jordløs Huus",
+          "Ejer et Jordløs Huus"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Ejer hus uden jord"
+      },
+      {
+        "from": [
+          "snedkersvend",
+          "Snedkerdreng"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Snedker"
+      },
+      {
+        "from": [
+          "tjener hos forældrene",
+          "tjenende hos forældrene"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Tjener hos forældrene"
+      },
+      {
+        "from": [
+          "Gaardmand",
+          "ed Gaardmand"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Gaardmand"
+      },
+      {
+        "from": [
+          "har rd pension",
+          "har Pension"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Lever af sin pension"
+      },
+      {
+        "from": [
+          "Landsoldat",
+          "er LandSoldat"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Soldat"
+      },
+      {
+        "from": [
+          "nyder Ophold af Huuset",
+          "faaer Ophold af Huuset"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Nyder ophold af huset"
+      },
+      {
+        "from": [
+          "tjener hos forældrene",
+          "tjener Morforældrene"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Yjener hos forældrene"
+      },
+      {
+        "from": [
+          "Wed et Huus med Jord",
+          "i et Huus med Jord"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Ejer hus uden jord"
+      },
+      {
+        "from": [
+          "Pensionist",
+          "Pensionair"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Pensionist"
+      },
+      {
+        "from": [
+          "har Aftægt af gaarden",
+          "faaer Aftægt af Gaarden"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "har Aftægt af gaarden"
+      },
+      {
+        "from": [
+          "Lever af pension",
+          "lever af en pension"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Lever af in Pension"
+      },
+      {
+        "from": [
+          "vanvittig",
+          "er vanvittig"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "vanvittig"
+      },
+      {
+        "from": [
+          "Almisselem",
+          "Almisse"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Almisselem"
+      },
+      {
+        "from": [
+          "Tømmersvend",
+          "er Tømmersvend"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Tømmersvend"
+      },
+      {
+        "from": [
+          "Kan væve",
+          "hun væver"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Væver"
+      },
+      {
+        "from": [
+          "Konen Væverske",
+          "Konen er Væverske"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Væver"
+      },
+      {
+        "from": [
+          "Husmand uden Jord",
+          "Hijulmand uden Jord"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Husmand uden jord"
+      },
+      {
+        "from": [
+          "Konen væver",
+          "Konen Væverske"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Væver"
+      },
+      {
+        "from": [
+          "Væverdreng",
+          "er væverdreng"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Væverdreng"
+      },
+      {
+        "from": [
+          "Skrøbelig",
+          "Er skrøbelig"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Skrøbelig"
+      },
+      {
+        "from": [
+          "tjener hos faderen",
+          "tjener hos broderen"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Tjener hos faderen"
+      }
+    ],
+    "description": "Mass edit cells in column Erhverv_rensen"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "Erhverv_rensen",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Lever af in Pension",
+          "Lever af sin pension",
+          "Lever af sin Pension "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Lever af in pension"
+      },
+      {
+        "from": [
+          "Husmand med jord",
+          "Husmand uden jord",
+          "Huskone uden jord"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Husmand med jord"
+      },
+      {
+        "from": [
+          "Nyder Ophold hos Datteren",
+          "Faaer Ophold hos Datteren"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Nyder ophold hos datteren"
+      },
+      {
+        "from": [
+          "Faar Ophold af Datteren",
+          "faar Ophold Datteren"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Nyder ophold hos datteren"
+      },
+      {
+        "from": [
+          "Forpagter paa Gaarden",
+          "Forpagter wed Gaarden"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Forpagter "
+      },
+      {
+        "from": [
+          "Opholdsfolk paa Gaarden",
+          "Opholdsfolk på Gaarden"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Opholdsfolk paa Gaarden"
+      },
+      {
+        "from": [
+          "haver lidet Jord",
+          "har lidt Jord"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Ejer lidt jord"
+      }
+    ],
+    "description": "Mass edit cells in column Erhverv_rensen"
+  }
+]
